@@ -1,0 +1,163 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10320 items from 5000.
+Database file #1: main-blx.bib
+Database file #2: bibliography.bib
+Warning--string name "missing" is undefined
+--line 46 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 63 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 80 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 97 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 131 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 138 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 146 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 147 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 148 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 155 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 158 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 159 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 160 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 163 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 164 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 165 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 182 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 199 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 216 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 233 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 250 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 267 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 284 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 301 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 309 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 313 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 315 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 325 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 327 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 328 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 339 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 340 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 351 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 353 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 357 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 363 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 369 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 375 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 387 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 388 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 393 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 399 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 405 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 411 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 425 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 1480 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 1486 of file bibliography.bib
+Warning--string name "missing" is undefined
+--line 1490 of file bibliography.bib
+Biblatex version: 3.19
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 38 entries,
+            6399 wiz_defined-function locations,
+            1503 strings with 24212 characters,
+and the built_in function-call counts, 363431 in all, are:
+= -- 28397
+> -- 7560
+< -- 2682
++ -- 12020
+- -- 3610
+* -- 25413
+:= -- 39433
+add.period$ -- 0
+call.type$ -- 38
+change.case$ -- 37
+chr.to.int$ -- 388
+cite$ -- 74
+duplicate$ -- 38730
+empty$ -- 29692
+format.name$ -- 2930
+if$ -- 73211
+int.to.chr$ -- 0
+int.to.str$ -- 145
+missing$ -- 0
+newline$ -- 1708
+num.names$ -- 2673
+pop$ -- 13881
+preamble$ -- 1
+purify$ -- 1730
+quote$ -- 0
+skip$ -- 11271
+stack$ -- 0
+substring$ -- 49717
+swap$ -- 8454
+text.length$ -- 1591
+text.prefix$ -- 56
+top$ -- 1
+type$ -- 1278
+warning$ -- 0
+while$ -- 5039
+width$ -- 0
+write$ -- 1671
+(There were 48 warnings)

@@ -1,0 +1,39 @@
+\clearpage
+\section{State of the Art in Science and Technology}
+\label{sec:standWiss}
+
+% - Nationale / internationale Arbeiten und die Unterschiede; eigene Vorarbeiten; (Abgrenzung der eigenen Forschungsarbeit muss deutlich werden)
+% - Hinweis auf wichtigste aktuelle Projekte / Methoden (keine akademisch vollständigen Beschreibungen, Beschreibung muss zielbezogen sein, Referenzen möglich, aber nicht notwendig)
+% - Abgrenzung zu aktuellen und laufenden Vorhaben mit Förderkatalog der Bundesregierung (\url{https://foerderportal.bund.de/foekat/jsp/StartAction.do}) und früheren SWC Projekten
+
+Das Projekt SPENCER baut auf einer soliden Basis wissenschaftlicher Vorarbeiten einer kleinen aber aktiven Forschungsgemeinde im Bereich Edge"=Computing in Satellitennetzwerken auf.
+Den Anstoß zur aktiven Erforschung von Softwarebereitstellung in Satellitennetzwerken gaben unter anderem Bhattacherjee et al.~\cite{Bhattacherjee2020-kr} mit einer Machbarkeitsstudie, in der die Möglichkeiten und Anwendungsfälle von Edge und In-Network Computing in massiven LEO-Satellitennetzwerken umrissen werden.
+Zusätzlich beschrieben etwa Bhosale et al.~\cite{Bhosale2020-aa} mit \emph{Krios} ein erstes Anwendungsorganisationsparadigma für Edge und In-Network Computing in Satellitennetzwerken.
+Krios basiert auf dem Container-Verwaltungssystem \emph{Kubernetes} und weist damit eine hohe Anzahl an Ineffizienzen und Problemen auf, die im Projekt SPENCER mit einem Serverless-Ansatz behoben werden.
+
+Zudem ist das Projekt \emph{Tiansuan Constellation} der Beijing University of Posts and Telecommunications, Spacety und der Peking University hervorzuheben, in dem mit der Kombination industrieller und akademischer Ressourcen eine Open-Source Dienstplattform für Satelliten-Computing-Experimente im erdnahen Orbit entwickelt wird~\cite{wang2021tiansuan,wang2022tiansuan2,tiansuan2023online}.
+Neben der Entwicklung von Anwendungen, Netzwerktechnologien und Software-Plattformen werden im Projekt auch eigene Satelliten entwickelt und bereitgestellt, auf denen Forschungsprototypen in realistischer Umgebung evaluiert werden können.
+
+Neben diesen akademischen Arbeiten und Projekten beschäftigen sich bereits Akteure der Industrie mit Edge"=Computing im erdnahen Orbit.
+Beispielsweise konnte Hewlett Packard Enterprise mit den Projekten \emph{HPE Spaceborne Computer} und \emph{HPE Spaceborne Computer 2} kommerzielle, frei verfügbare (\emph{commercial off-the-shelf}, COTS) Rechenserver auf der Internationalen Raumstation (\emph{International Space Station}, ISS) bereitstellen~\cite{hpespaceborne}.
+Das Unternehmen OrbitsEdge stellte zudem das Produkt \emph{SATFRAME\textsuperscript{TM} 445 LE} vor, das Rahmenbedingungen für COTS-Rechen-Hardware im erdnahen Orbit bietet~\cite{orbitsedge2022}.
+
+Die Übersicht über bestehende Arbeiten im Feld weist einen Mangel an Forschungsaktivitäten in Deutschland und Europa auf.
+Hier kann auf Vorarbeiten der Projektleitung verwiesen werden, die im Rahmen des DFG-geförderten Projektes \emph{FogStore} am Fachgebiet Mobile Cloud Computing der Technischen Universität Berlin erbracht wurden.
+Beispielsweise wurden bereits die bestehenden Forschungslücken in der Anwendungsorganisation für Edge und In-Network Computing in massiven LEO-Satellitennetzwerken dargelegt und vorgeschlagen, dass ein Serverless-Ansatz notwendig ist~\cite{paper_pfandzelter2021_LEO_serverless}.
+Zudem konnten bereits erste Anwendungen für Edge"=Computing in Satellitennetzwerken vorschlagen werden~\cite{paper_pfandzelter2021_LEO_CDN,pfandzelter2023mars}.
+Mit \emph{\textsc{Celestial}} wurde ein Open-Source Werkzeugset für die Experiment-getriebene Evaluierung von Softwaresystemen für Edge und In-Networking Computing in LEO-Satellitennetzwerken vorgestellt, das skalierbar und effizient Satelliten-Infrastruktur in der Cloud emuliert~\cite{pfandzelter2023celestialdemo,paper_becker2022_netem,pfandzelter2023failure,paper_pfandzelter2022_celestial,techreport_pfandzelter2022_celestial_extended}.
+Es sei zudem auf Arbeiten des Projektleiters im Bereich Serverless"=Computing in Edge"=Computing verwiesen~\cite{paper_pfandzelter2020_tinyfaas,pfandzelter2023fred,pfandzelter2023enoki}.
+
+Darüber hinaus gibt es Forschungsprojekte mit Förderung durch die Bundesregierung, die einen Bezug zu den Inhalten des Projekts SPENCER haben, besonders im Bereich Telekommunikationstechnologien der sechsten Generation (6G).
+Beispielsweise untersuchen die Projekte \emph{6G-SKY}~\cite{6gsky} (Verbundprojekt gefördert durch das Bundesministerium für Wirtschaft und Klimaschutz, BMWK) und \emph{6G-TakeOff}~\cite{6gtakeoff} (Verbundprojekt gefördert durch das BMBF) holistische 3D-Netzwerkarchitekturen mit Satellitenkonnektivität.
+Ähnlich entwickelt das Projekt \emph{Nitrides-4-6G}~\cite{nitrides46g} (Verbundprojekt gefördert durch das BMBF) Nitrid-basierte, dispersionsarme, effiziente Millimeterwellenbauelemente für strahlungsfeste Satelliten-Kommunikation.
+Anders als das Projekt SPENCER kombinieren diese Projekte jedoch nicht Satellitennetzwerktechnik mit Edge und In-Network Computing.
+Diese Bereiche werden eher in Projekten wie \emph{KeeCEK}~\cite{keecek} (Projekt gefördert durch das Bundesministerium für Digitales und Verkehr, BMDV), \emph{CLOUD56}~\cite{cloud56} und \emph{6G NeXt}~\cite{6gnext} (beide Verbundprojekte gefördert durch das BMBF).
+
+Im aktuellen Stand der Wissenschaft und Technik bleiben entscheidene Forschungsfragen jedoch bisher unbeantwortet, die im Projekt SPENCER addressiert werden.
+Es gibt bisher keine konkreten Vorschläge, welche Anwendungen sich für Edge-Computing in LEO-Satellitennetzwerken besonders eignen.
+Besonders wichtig ist hier eine Definition der für die Anwendungen notwendigen Resourcen und Metriken, um eine objektive Bewertung von Ansätzen für Software- und Hardware-Plattformen für Edge-Computing in Satellitennetzwerken zu ermöglichen.
+Darüber hinaus ist bisher wenig erforscht, wie von der hohen Netzwerkdynamik in erdnahen Satellitennetzwerken abstrahiert werden kann, da Edge-Anwendungen häufig ortsgebunden bereitgestellt werden sollen.
+Schlussendlich ist bisher auch unklar, ob Serverless"=Computing für die geringen Resourcen in Edge-Infrastruktur auf Satelliten oder die Skalierbarkeit über tausende von Satelliten-Servern hinweg erweitert oder angepasst werden muss.
+Diese Fragen stellen die Kernforschungsziele des Projekts SPENCER dar.

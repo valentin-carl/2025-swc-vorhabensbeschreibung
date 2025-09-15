@@ -1,0 +1,251 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[
+    colorlinks=true,colorlinks,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue,
+    filecolor=blue
+]{hyperref}
+
+%\usepackage[a4paper,showframe]{geometry}
+
+\usepackage[notmath]{sansmathfonts}
+\renewcommand{\familydefault}{\sfdefault}
+\DeclareFontSeriesDefault[sf]{bf}{bx}
+
+\usepackage[gen]{eurosym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{booktabs}
+\usepackage{pgfgantt}
+\usepackage[all]{nowidow}
+\usepackage{titlesec}
+\usepackage{csquotes}
+%\usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{pgfgantt}
+\usepackage[noabbrev]{cleveref}
+\usepackage{subcaption}
+
+\usepackage{siunitx}
+\usepackage{parskip}
+\setlength{\parskip}{0.5em} % adjust to taste
+\setlength{\parindent}{0pt} % optional: remove indentation
+
+\makeatletter
+\addtolength{\oddsidemargin}{-1.7cm}
+\addtolength{\evensidemargin}{-1.7cm}
+\addtolength{\textwidth}{3.5cm}
+\addtolength{\topmargin}{-2cm}
+\addtolength{\textheight}{3cm}
+
+\@addtoreset{table}{section}
+\@addtoreset{figure}{section}
+\makeatother
+
+\renewcommand\thefigure{%
+\thesection.\arabic{figure}}
+\renewcommand\thesubfigure{%
+\thesection.\arabic{figure}.\arabic{subfigure}}
+\renewcommand\thetable{%
+\thesection.\arabic{table}}
+
+% Ordentliche Namen für die Kapitel
+% \crefname{section}{Kapitel}{Kapitel}
+% \Crefname{section}{Kapitel}{Kapitel}
+
+% \crefname{subsection}{Kapitel}{Kapitel}
+% \Crefname{subsection}{Kapitel}{Kapitel}
+
+% \crefname{subsubsection}{Kapitel}{Kapitel}
+% \Crefname{subsubsection}{Kapitel}{Kapitel}
+
+\crefname{paragraph}{Absatz}{Absatz}
+\Crefname{paragraph}{Absatz}{Absatz}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+%{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+{0pt}{1.5ex plus 1ex minus .2ex}{1.0ex plus .2ex}
+\titlespacing*{\section}
+{0pt}{1.0ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+\titlespacing*{\subsection}
+{0pt}{1ex plus 1ex minus .2ex}{2ex plus .2ex}
+\titlespacing*{\subsubsection}
+{0pt}{1.3ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+%    \setlength{\parskip}{0cm}
+%\setlength{\parindent}{1em}
+%\setlength{\parskip}{0em}
+\usepackage{adjustbox}
+\usepackage{listings}
+%\usepackage{bibunits}
+\usepackage{graphicx}
+\usepackage{graphbox}
+\usepackage{hyphenat}
+
+\usepackage{wrapfig}
+
+\renewcommand*\labelenumi{(\theenumi)}
+\newcommand{\bluebox}[1]{\begin{center}\adjustbox{cfbox=blue 1pt 7pt,minipage=0.9\textwidth,center}{#1}\end{center}}
+\newcommand{\blueboxcentered}[1]{\begin{center}\adjustbox{cfbox=blue 1pt 7pt,minipage=0.9\textwidth,center}{
+      \begin{center}
+        #1
+      \end{center}
+}\end{center}}
+\definecolor{tub_red}{RGB}{197,14,31}
+\usepackage{todonotes}
+%\usepackage[disable]{todonotes}
+\setlength{\marginparwidth}{2cm}
+
+\newcommand{\DB}[1]{\todo[color=purple,inline, caption={}]{David: #1}}
+\newcommand{\TP}[1]{\todo[color=yellow,inline, caption={}]{Tobias: #1}}
+\newcommand{\OA}[1]{\todo[color=green,inline, caption={}]{Osama: #1}}
+
+
+\usepackage[
+    maxbibnames=99,
+    style=alphabetic,
+    url=false,
+    backend=bibtex8,
+    sortcites=true,
+]{biblatex}
+
+\addbibresource{bibliography.bib}
+
+\DeclareFieldFormat[online]{urldate}{Zuletzt abgerufen: #1}
+\DeclareFieldFormat{eprint}{arXiv: \href{https://arxiv.org/abs/#1}{#1}}
+\DeclareFieldFormat[report]{title}{``#1''}
+
+\DefineBibliographyStrings{ngerman}{
+    january   = Januar,
+    february  = Februar,
+    march     = März,
+    april     = April,
+    may       = Mai,
+    june      = Juni,
+    july      = Juli,
+    august    = August,
+    september = September,
+    october   = Oktober,
+    november  = November,
+    december  = Dezember,
+}
+
+
+\newcommand{\needcheck}[1]{\textcolor{red}{#1}}
+
+\newcommand{\apDef}{AP 1 - Definition}
+\newcommand{\apDev}{AP 2 - Agile Entwicklung}
+\newcommand{\apEval}{AP 3 - Evaluation}
+\newcommand{\apWiss}{AP 4 - Wissenschaftliche Dissemination}
+\newcommand{\apLeit}{AP 5 - Projektleitung}
+
+\newcommand{\name}{\text{GEKO}}
+
+\hyphenation{ Ar-beits-pa-ket-en }
+
+\begin{document}
+
+\vspace*{1cm}
+
+%\begin{center}
+%    \includegraphics[align=c,height=1.5cm]{./graphs/spencer.pdf}\hfill
+%\end{center}
+
+\begin{center}
+    {\LARGE
+        \textbf{\name: GPUs energieeffizient\\ für KI-Inferenz orchestrieren}
+        \vspace{10pt}
+    }\\
+
+    {\large
+    Project description (VHB) for software campus 2025
+    \vspace{10pt}
+    }\\
+
+    {\large
+    \textbf{Valentin Carl}
+    \vspace{10pt}
+
+    \today
+    \vspace{10pt}
+    }
+
+    \def\arraystretch{1.2}
+    \begin{tabular}{|l|l|}
+        \hline
+        \begin{tabular}[c]{@{}l@{}}
+            \textbf{Applicant} \\
+            \needcheck{(Projektrahmenvorhaben)}
+        \end{tabular} &
+        Technische Universität Berlin \\ \hline
+        \textbf{Project lead} &
+        \begin{tabular}[c]{@{}l@{}}
+            Valentin Carl \\
+            Technische Universität Berlin \\
+            FG Skalierbare Softwaresysteme (E-N 17) \\
+            Einsteinufer 17 \\
+            10587 Berlin \\
+            E-Mail: \href{mailto:nc@3s.tu-berlin.de}{nc@3s.tu-berlin.de} \\
+        \end{tabular} \\ \hline
+        \textbf{Academic supervision} &
+        \begin{tabular}[c]{@{}l@{}}
+            Prof.~Dr.-Ing.~David Bermbach \\
+            Technische Universität Berlin \\
+            FG Skalierbare Softwaresysteme (E-N 17)\\
+            Einsteinufer 17 \\
+            10587 Berlin \\
+            E-Mail:~\href{mailto:db@3s.tu-berlin.de}{db@3s.tu-berlin.de} \\
+        \end{tabular}\\ \hline
+        \textbf{Industry partner}&
+        \begin{tabular}[c]{@{}l@{}}
+            Dr. Sripriya Adhatarao                \\
+            Huawei Technologies Duesseldorf GmbH \\
+            Advanced Wireless Technologies Lab   \\
+            Riesstraße 25                        \\
+            80992 München.                       \\
+            E-Mail:~\href{mailto:sripriya.srikant.adhatarao@huawei.com}{sripriya.srikant.adhatarao@huawei.com}
+        \end{tabular}                            \\ \hline
+        \textbf{\begin{tabular}[c]{@{}l@{}}Project start\\ Project duration\end{tabular}} &
+        \begin{tabular}[c]{@{}l@{}}
+            \needcheck{March 1, 2026} \\
+            \needcheck{12 Months}
+        \end{tabular}                                                                       \\ \hline
+    \end{tabular}
+\end{center}
+
+\vspace{15pt}
+
+\begin{center}
+    \includegraphics[align=c,height=1.5cm]{./graphs/swc.png}\hfill
+    \includegraphics[align=c,height=0.8cm]{./graphs/huawei.png}\hfill
+    \includegraphics[align=c,height=1.5cm]{./graphs/3s-default-transparent.pdf}\hfill
+    \includegraphics[align=c,height=1.3cm]{./graphs/tuberlin.pdf}
+\end{center}
+
+\thispagestyle{empty}  % Removes page number from the first page
+\clearpage             % Start a new page
+% \setcounter{page}{1}
+\tableofcontents
+\newpage
+
+\input{sections/1_intro.tex}
+\input{sections/2_standWiss.tex}
+\input{sections/3_partner.tex}
+\input{sections/4_arbeitsplan.tex}
+\input{sections/4.3_finanzen.tex}
+\input{sections/5_verwertungsplan.tex}
+\input{sections/6_literatur.tex}
+
+\appendix
+
+\input{sections/7_anhang.tex}
+
+\end{document}
+

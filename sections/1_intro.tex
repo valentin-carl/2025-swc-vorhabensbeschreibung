@@ -1,0 +1,124 @@
+\clearpage
+\section{Task Definition and Motivation}
+
+% Formulation of the scientific question: Social relevance, practical relevance, practical application example
+Function-as-a-Service (FaaS) is a serverless computing model in which developers write small, stateless functions that are invoked by a cloud platform in response to external requests.
+In this model, the platform manages nearly all aspects of execution, including resource allocation, auto-scaling, and the runtime environment.
+Especially in edge environments, where resources are scarce, FaaS has proven to be a suitable paradigm for sharing hardware between applications and allocating resources only when they are actually needed.
+At the same time, the rapid growth of cloud platforms and data centers has made their energy consumption a critical concern.
+Over the past decades, global data center electricity use has steadily increased without signs of slowing down.
+In 2023, data centers in the United States alone consumed \SI{176}{TWh}, accounting for \SI{4.4}{\percent} of the country's total electricity use, with projections estimating a rise to \SIrange{6.7}{12}{\percent} by 2028~\cite{shehabi_united_2024}.
+Despite significant improvements in Power Usage Effectiveness (PUE), rising demand consistently outpaces efficiency gains, and data centers already account for roughly \SI{1}{\percent} of global electricity consumption~\cite{masanet_recalibrating_2020,sharma_jevons_2017,gandhi_metrics_2023}.
+This trajectory directly conflicts with the Paris Agreement's target of limiting global warming to well below \SI{2}{\celsius}, which requires rapid and substantial reductions in greenhouse gas emissions.
+These developments create a responsibility for both developers and cloud platforms alike to consciously consider and continuously improve the environmental footprint of their infrastructures~\cite{chien_driving_2021}.
+
+The energy demand of artificial intelligence workloads is a particularly pressing issue.
+Modern inference tasks are heavily GPU-bound, and while GPUs provide the necessary computational performance, they are also associated with high energy costs.
+This creates a fundamental tension between society's growing reliance on AI-powered services and the urgent need to reduce the carbon footprint of digital infrastructures.
+To address this challenge, we focus on FaaS as the underlying paradigm.
+The serverless model provides fine-grained elasticity, centralized infrastructure management, resource sharing across applications, and a large degress of control to the cloud platform, which are particularly valuable both in large-scale cloud data centers and in resource-constrained edge environments.
+These properties make FaaS a natural foundation for implementing energy-aware orchestration strategies that can adaptively control GPU usage.
+At the same time, a lot of work remains to be done in order to improve the currently poor energy efficiency of contemporary FaaS platforms~\cite{sharma_challenges_2023}.
+The scientific question that motivates this project is therefore: How can GPU resources for serverless inference be orchestrated in an adaptive and energy-efficient manner, without compromising performance?
+
+The social relevance of this question lies in the sustainability of digital infrastructures.
+As AI models become important components of everyday applications, from medical diagnostics to large language models, operators must reconcile latency and throughput demands with climate responsibility.
+Practically, today's serverless platforms provide limited support for GPU execution, in general, and fine-grained GPU management, in particular: In most deployments and when available, GPUs remain powered even during idle times, wasting significant amounts of energy.
+Addressing this inefficiency not only has the potential to greatly affect environmental impact of serverless infrastructure but also lowers operational costs in cloud-scale environments.
+This issue is even more pressing for Germany, as the country already experiences substatially increased levels of warming compared to global trends and currently even the most pessimistic RPC8.5 scenario~\cite{dwd_2024_klimastatusbericht}.
+
+Practical application examples can be found in inference-as-a-service offerings.
+Applications such as real-time medical image analysis or conversational AI systems must respond elastically to fluctuating demand.
+A dynamic orchestration approach will ensure that GPUs are powered on only when required, while predictive scheduling mechanisms mitigate cold-start overheads.
+This will enable cloud providers to deliver sustainable, latency-sensitive services at scale without sacrificing user experience.
+The goal of the \textbf{GEKO} (\enquote{\textbf{G}PUs \textbf{e}nergieeffizient für \textbf{K}I-Inferenz \textbf{o}rchestrieren}) project is therefore to develop serverless platform architectures and programming abstractions that will enable deploying, managing, and using serverless functions with GPU support for AI applications in an energy-efficient manner.
+
+\subsection{Focus and objectives}
+% Grobe Ziele, Menthodenschwerpunkte, Neuheutsgrad des Ansatzes
+
+%Edge- und In-Network-Computing bilden die grundlegende Infrastruktur für moderne Anwendungsdomänen wie das Internet of Things (IoT), erweiterte Realitäten (XR), High"=Bandwidth"=Web"=Technologien und die Vehicle"=to"=X Kommunikation (V2X).
+%Diese Technologien erfordern verteilte Hardware und Micro-Datacenter, was mit erheblichen Investitionen verbunden ist und daher vor allem in be\-völk\-er\-ungs\-rei\-chen und kaufkräftigen Regionen wie Großstädten eingesetzt wird.
+%In ländlichen Regionen, auf Inseln sowie in Flugzeugen und Schiffen, die nicht über Glasfaser- oder Mobilfunkverbindungen versorgt werden können, sind solche Innovationen bislang nicht verfügbar.
+%Um Edge-Dienste global verfügbar zu machen, müssen In-Network-Computing-Optionen auch in neuartigen nicht-terrestrischen Netzwerken und Satellitennetzwerken angeboten werden, die diesen Regionen künftig Hochgeschwindigkeitsinternetzugang bieten werden.
+%Die effiziente Nutzung begrenzter Ressourcen in Satelliten-Micro-Datacentern für Anwendungen und die nahtlose Integration in terrestrisches Edge- und Cloud-Computing erfordern neuartige Softwareabstraktionen und Software-Plattformen.
+%
+%Im Gegensatz zum etabliertem terrestrischen Edge"=Computing steht das Konzept von Edge"=Computing in Satellitennetzwerken noch am Anfang seiner Entwicklung.
+%Obwohl bereits einige akademische Untersuchungen die Durchführbarkeit dieses Konzepts aufzeigen, werden gleichzeitig neue Herausforderungen für die globale Bereitstellung von Software in Satellitennetzwerken sichtbar.
+%Speziell sind hier sinnvolle Abstraktionen erforderlich, die die hohe Netzwerkdynamik, die globale Verteilung von Software- und Hardwarekomponenten und die begrenzten Ressourcen berücksichtigen.
+
+FaaS has emerged as a promising abstraction for building scalable and elastic applications.
+However, despite its advantages, current FaaS platforms remain highly energy-inefficient~\cite{sharma_challenges_2023}. 
+This inefficiency stems from two key factors: the strong variance in request loads, which often leads to overprovisioning or idle resources, and the expensive software-level isolation required to execute short-lived functions securely~\cite{schirmer2023nightshift,ginzburg_serverless_2020}.
+As a result, serverless applications today are far from exploiting their potential for sustainable operation.
+
+At the same time, FaaS has the ideal prerequisites to serve as the core programming model for energy-efficient AI inference~\cite{patros_2021_towards_sustainable_serverless}.
+Its fine-grained elasticity, centralized control of resources, and abstraction from application logic make it a natural fit for orchestrating energy-aware scheduling and adaptive GPU usage. 
+Yet, realizing this potential requires foundational research, since existing platforms offer only limited support in this direction. 
+Notably, most public FaaS services do not provide GPU support at all, leaving no basis for exploring efficient orchestration of inference workloads.
+
+A key reason why FaaS is particularly well suited for sustainable computing lies in its platform-centric model.
+Instead of requiring every developer to solve sustainability challenges individually, the serverless abstraction concentrates responsibility for efficiency at the platform level.
+This enables resource sharing, workload consolidation, and energy-aware scheduling to be implemented once and leveraged by all applications running on the platform.
+In principle, this makes FaaS one of the strongest candidates for aligning large-scale digital infrastructures with sustainability goals, provided that the necessary system mechanisms exist.
+
+The focus of this project is therefore to establish the groundwork for sustainable, scalable GPU-based inference in serverless environments.
+We aim to provide the missing system-level mechanisms that allow GPUs to be integrated into FaaS platforms and managed adaptively with respect to workload demands.
+In doing so, the GEKO project seeks to bridge the gap between today's energy-inefficient serverless platforms and a future in which FaaS is the foundation of sustainable AI infrastructure.
+
+
+\subsection{Scientific and/or technical objectives of the project}
+% Ausdifferenzierung, technische Konkretisierung. Typisches Ziel: Prototyp, Demonstrator - keine Produktentwicklung, kein fertiges Produkt
+
+%Das Hauptziel des Projekts SPENCER ist die Konzeption und Entwicklung dieser Abstraktionen innerhalb einer zuverlässigen und skalierbaren Software-Plattform.
+%In enger Zusammenarbeit mit Projektpartnern werden relevante Anwendungen in den genannten Anwendungsdomänen analysiert, um die Anforderungen an eine globale Edge"=Computing-Infrastruktur in großen Satellitennetzwerken zu definieren.
+%Auf Grundlage dieser Anforderungen werden Softwareabstraktionen entwickelt, um Entwickelnden die einfache, skalierbare und effiziente Bereitstellung von Anwendungen weltweit zu ermöglichen, insbesondere in Regionen, die aufgrund geografischer oder sozialer Bedingungen bislang nicht von terrestrischem Edge"=Computing profitieren konnten.
+%Hierbei wird auch das neuartige Softwareorganisationsparadigma `Serverless"=Computing' eingesetzt, bei dem Software vollständig ereignisgesteuert, elastisch und skalierbar in Cloud- und Edge"=Computing-Bereitstellungen integriert wird.
+%Konkret ergeben sich folgende wissenschaftliche und technische Fragen:
+%
+%\begin{enumerate}
+%    \item Welche Anwendungen und Anwendungsdomänen könnten von einer globalen Edge-Infrastruktur profitieren? Welche Erfolgsmetriken gelten für sie?
+%    \item Wie kann eine Software-Plattform für Edge-Computing in erdnahen Satellitenkonstellationen von der hohen Netzwerkdynamik abstrahieren?
+%    \item Wie muss das Konzept des Serverless"=Computing erweitert oder angepasst werden, um verschiedenste parallele Anwendungsdienste effizient auf stark begrenzter und womöglich fehleranfälliger Edge-Infrastruktur in Satelliten bereitzustellen?
+%\end{enumerate}
+%
+%Um diese Ziele zu erreichen, baut das Projekt auf einer Vielzahl eigener wissenschaftlicher Vorarbeiten in den Bereichen Edge"=Computing, Serverless"=Computing und Satellitennetzwerken auf.
+%Da diese bisher jedoch rein theoretischer Natur sind, soll im Projekt die Entwicklung praxisrelevanter Software im Vordergrund stehen.
+%Diese Software soll der Gemeinschaft nach Abschluss des Projektes als Open-Source-Software zur Verfügung gestellt werden.
+
+
+Building on the motivation outlined above, this project aims to develop the foundations for sustainable and scalable GPU-based inference in serverless platforms. The overarching goal is to transform Function-as-a-Service from an energy-inefficient abstraction into a viable basis for sustainable AI infrastructure. To achieve this, we focus on system-level mechanisms that enable adaptive GPU orchestration, efficient resource sharing, and transparent integration of energy-aware scheduling policies into the serverless execution model.
+
+The concrete objectives of this project are threefold. First, we seek to design and implement the missing platform mechanisms that allow GPUs to be exposed as first-class resources in FaaS environments. Second, we aim to develop orchestration strategies that adapt GPU allocation dynamically to workload fluctuations, minimizing idle energy costs while preserving performance. Third, we plan to evaluate the effectiveness of these strategies across a diverse set of inference workloads and deployment settings, thereby quantifying their impact on both energy efficiency and quality of service.
+
+From these objectives, the following research questions emerge:
+
+GPU Integration – How can GPUs be exposed and managed as first-class resources in FaaS environments, given the short-lived and highly dynamic nature of serverless functions?
+
+Adaptive Scheduling – What orchestration strategies can dynamically adapt GPU allocation to workload fluctuations, ensuring high utilization while minimizing idle energy costs?
+
+Evaluation and Trade-offs – How do the proposed mechanisms perform across diverse AI inference workloads, and what trade-offs emerge between energy efficiency, performance, and scalability?
+
+To address these questions, the project will create an open-source prototype of a serverless platform that integrates GPU support and implements energy-aware orchestration mechanisms. This prototype will be designed to be usable and extensible by both the research community and industry practitioners, providing a practical foundation for future work on sustainable AI infrastructures.
+
+
+\subsection{Relation of the project to funding policy objectives/funding program}
+
+% Zielstellung Software Campus, inhaltlicher Bezug zu Zukunftsstrategie des BMBF https://www.bmbf.de/bmbf/de/forschung/zukunftsstrategie/zukunftsstrategie_node.html
+
+%Das Projekt SPENCER hat einen hohen inhaltlichen Bezug zu den förderpolitischen Zielen und Förderprogrammen des Bundesministeriums für Bildung und Forschung (BMBF).
+%
+%Zunächst ist das Mikroprojekt SPENCER in das Projekt Software Campus eingebettet, das Promotionsstudierende der Informatik weiterbildet und auf zukünftige Führungspositionen vorbereitet, um deutsche und europäische Technologieführerschaft zu verteidigen und Forschungstransfer voranzubringen.
+%Master- und Promotionsstudierende, die im Rahmen des Projekts SPENCER an Konzeption und Entwicklung innovativer Softwareabstraktionen und Software-Plattformen für Edge"=Computing in Satellitennetzwerken mitwirken, vertiefen so ihre praktischen Fähigkeiten und ihr Verständnis für komplexe IT-Systeme.
+%Durch die Teilnahme an Trainings und Weiterbildungen im Bereich (nachhaltiger) Führungskompetenz können komplementär dazu die notwendigen Soft Skills erworben werden.
+%
+%Das Projekt SPENCER ist auch im Kontext der BMBF-Zukunftsstrategie für Forschung und Innovation von großer Bedeutung, da es darauf abzielt, die digitale Souveränität Deutschlands und Europas im Zusammenhang mit der nächsten Generation der Mobilfunktechnologie (6G) sicherzustellen.
+%Durch die Entwicklung von Softwareabstraktionen und Plattformen für Edge- und In"=Network"=Computing in nicht-terrestrischen Netzwerken und Satellitennetzwerken trägt das Projekt SPENCER dazu bei, die technologische Unabhängigkeit im Bereich 6G-Netzwerke und -Dienste zu stärken.
+%Dies ist von entscheidender Bedeutung, um die Potenziale der Digitalisierung voll auszuschöpfen und Deutschlands und Europas Rollen in der globalen Technologieentwicklung zu festigen.
+%
+%Das Projekt hat zudem direkte Verbindungen zur Raumfahrt und zur Erforschung des Weltraums.
+%Es fokussiert auf die Integration von Edge"=Computing in Satellitennetzwerke, die den Zugang zu hochwertigen Daten aus dem Weltraum und die Bereitstellung von Diensten in entlegenen Regionen ermöglichen.
+%Dies unterstützt die Stärkung der Raumfahrt, die Erforschung des Weltraums und die nachhaltige Nutzung von Raumfahrttechnologien zur Verbesserung der Lebensqualität auf der Erde.
+%
+%SPENCER fördert darüber hinaus auch gesellschaftliche Resilienz, Vielfalt und Zusammenhalt, indem es darauf abzielt, Edge-Dienste in Regionen zu bringen, die aufgrund geografischer oder sozialer Gegebenheiten bisher nicht von terrestrischem Edge"=Computing profitieren konnten.
+%Durch die Bereitstellung dieser Dienste trägt SPENCER dazu bei, die `Digital Divide' zu überbrücken und die Resilienz von Gemeinschaften in abgelegenen oder benachteiligten Gebieten zu stärken.
+%Es unterstützt auch die Vielfalt, indem es digitale Möglichkeiten in Regionen erweitert, in denen sie zuvor begrenzt waren, und fördert den gesellschaftlichen Zusammenhalt, indem es gleichberechtigten Zugang zu digitalen Technologien gewährleistet.
