@@ -17,164 +17,6 @@
 \endgroup
 
 \datalist[entry]{anyt/global//global/global}
-  \entry{Bhosale2020-aa}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=BV}{%
-         family={Bhosale},
-         familyi={B\bibinitperiod},
-         given={Vaibhav},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=BK}{%
-         family={Bhardwaj},
-         familyi={B\bibinitperiod},
-         given={Ketan},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=GA}{%
-         family={Gavrilovska},
-         familyi={G\bibinitperiod},
-         given={Ada},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {USENIX Association}%
-    }
-    \strng{namehash}{BVBKGA1}
-    \strng{fullhash}{BVBKGA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{BBG20}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{booktitle}{Proceedings of the 3rd {USENIX} Workshop Hot Topics in Edge Computing}
-    \field{series}{{HotEdge} '20}
-    \field{title}{Toward Loosely Coupled Orchestration for the {LEO} Satellite Edge}
-    \field{venue}{Virtual}
-    \list{location}{1}{%
-      {Berkeley, CA, USA}%
-    }
-    \field{month}{06}
-    \field{year}{2020}
-  \endentry
-
-  \entry{paper_becker2022_netem}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=BS}{%
-         family={Becker},
-         familyi={B\bibinitperiod},
-         given={Soeren},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=PTP}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias\bibnamedelima Pfandzelter},
-         giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=JN}{%
-         family={Japke},
-         familyi={J\bibinitperiod},
-         given={Nils},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=KO}{%
-         family={Kao},
-         familyi={K\bibinitperiod},
-         given={Odej},
-         giveni={O\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{BS+1}
-    \strng{fullhash}{BSPTPJNBDKO1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Bec+22}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{booktitle}{Proceedings of the 2nd International Workshop on Testing Distributed Internet of Things Systems}
-    \verb{doi}
-    \verb 10.1109/IC2E55432.2022.00007
-    \endverb
-    \field{pages}{1\bibrangedash 7}
-    \field{series}{TDIS 2022}
-    \field{title}{Network Emulation in Large-Scale Virtual Edge Testbeds: A Note of Caution and the Way Forward}
-    \verb{url}
-    \verb https://doi.org/10.1109/IC2E55432.2022.00007
-    \endverb
-    \field{venue}{Asilomar, CA, USA}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{month}{09}
-    \field{year}{2022}
-  \endentry
-
-  \entry{Bhattacherjee2020-kr}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=BD}{%
-         family={Bhattacherjee},
-         familyi={B\bibinitperiod},
-         given={Debopam},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=KS}{%
-         family={Kassing},
-         familyi={K\bibinitperiod},
-         given={Simon},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=LM}{%
-         family={Licciardello},
-         familyi={L\bibinitperiod},
-         given={Melissa},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SA}{%
-         family={Singla},
-         familyi={S\bibinitperiod},
-         given={Ankit},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Association for Computing Machinery (ACM)}%
-    }
-    \strng{namehash}{BD+1}
-    \strng{fullhash}{BDKSLMSA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Bha+20}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{booktitle}{Proceedings of the 19th {ACM} Workshop Hot Topics in Networks}
-    \verb{doi}
-    \verb 10.1145/3422604.3425937
-    \endverb
-    \field{pages}{197\bibrangedash 204}
-    \field{series}{HotNets '20}
-    \field{title}{In-orbit Computing: An Outlandish thought Experiment?}
-    \verb{url}
-    \verb https://doi.org/10.1145/3422604.3425937
-    \endverb
-    \field{venue}{Virtual Event, USA}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{month}{11}
-    \field{year}{2020}
-  \endentry
-
   \entry{9996766}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=BF}{%
@@ -228,33 +70,6 @@
     }
     \field{month}{12}
     \field{year}{2022}
-  \endentry
-
-  \entry{6gtakeoff}{online}{}
-    \name{author}{1}{}{%
-      {{hash=BM}{%
-         family={Breitbach},
-         familyi={B\bibinitperiod},
-         given={Markus},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {{Deutsche Telekom AG}}%
-    }
-    \strng{namehash}{BM1}
-    \strng{fullhash}{BM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Bre23}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{addendum}{Zuletzt abgerufen: 13. Oktober 2023}
-    \field{title}{The future of everything connected -- 6G-TakeOff}
-    \verb{url}
-    \verb https://www.6g-takeoff.de/
-    \endverb
-    \field{year}{2023}
   \endentry
 
   \entry{10008593}{inproceedings}{}
@@ -518,34 +333,6 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{6gnext}{online}{}
-    \name{author}{1}{}{%
-      {{hash=GSM}{%
-         family={Galkow-Schneider},
-         familyi={G\bibinithyphendelim S\bibinitperiod},
-         given={Mandy},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {{Deutsche Telekom AG, T-Labs}}%
-    }
-    \strng{namehash}{GSM1}
-    \strng{fullhash}{GSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{GS22}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{addendum}{Zuletzt abgerufen: 13. Oktober 2023}
-    \field{title}{6G NeXt}
-    \verb{url}
-    \verb https://6g-sky.net/
-    \endverb
-    \field{month}{08}
-    \field{year}{2022}
-  \endentry
-
   \entry{gandhi_metrics_2023}{article}{}
     \name{author}{10}{}{%
       {{hash=GA}{%
@@ -645,71 +432,129 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{hpespaceborne}{online}{}
-    \list{organization}{1}{%
-      {Hewlett Packard Enterprise}%
-    }
-    \field{shorthand}{HPE21}
-    \field{label}{HPE21}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{HPE21}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{addendum}{Zuletzt abgerufen: 13. Oktober 2023}
-    \field{title}{{HPE} Spaceborne Computer}
-    \verb{url}
-    \verb https://www.hpe.com/us/en/compute/hpc/supercomputing/spaceborne.html
-    \endverb
-    \field{month}{02}
-    \field{year}{2021}
-  \endentry
-
-  \entry{keecek}{online}{}
-    \list{organization}{1}{%
-      {{Die Bundesregierung}}%
-    }
-    \field{shorthand}{Kee23}
-    \field{label}{Kee23}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Kee23}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{addendum}{Zuletzt abgerufen: 13. Oktober 2023}
-    \field{title}{Entwicklung von kleinen, effizienten, effektiven Cloud Edge Knoten (KeeCEK)}
-    \verb{url}
-    \verb https://foerderportal.bund.de/foekat/jsp/SucheAction.do?actionMode=vi
-    \verb ew&fkz=13IPC006
-    \endverb
-    \field{month}{05}
-    \field{year}{2023}
-  \endentry
-
-  \entry{6gsky}{online}{}
-    \name{author}{1}{}{%
-      {{hash=KJ}{%
-         family={Kolb},
-         familyi={K\bibinitperiod},
-         given={Julia},
+  \entry{jonas_cloud_2019}{misc}{}
+    \name{author}{14}{}{%
+      {{hash=JE}{%
+         family={Jonas},
+         familyi={J\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SSJ}{%
+         family={Schleier-Smith},
+         familyi={S\bibinithyphendelim S\bibinitperiod},
+         given={Johann},
          giveni={J\bibinitperiod},
       }}%
+      {{hash=SV}{%
+         family={Sreekanti},
+         familyi={S\bibinitperiod},
+         given={Vikram},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TCC}{%
+         family={Tsai},
+         familyi={T\bibinitperiod},
+         given={Chia-Che},
+         giveni={C\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Khandelwal},
+         familyi={K\bibinitperiod},
+         given={Anurag},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PQ}{%
+         family={Pu},
+         familyi={P\bibinitperiod},
+         given={Qifan},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Shankar},
+         familyi={S\bibinitperiod},
+         given={Vaishaal},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Carreira},
+         familyi={C\bibinitperiod},
+         given={Joao},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Krauth},
+         familyi={K\bibinitperiod},
+         given={Karl},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YN}{%
+         family={Yadwadkar},
+         familyi={Y\bibinitperiod},
+         given={Neeraja},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=GJE}{%
+         family={Gonzalez},
+         familyi={G\bibinitperiod},
+         given={Joseph\bibnamedelima E.},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=PRA}{%
+         family={Popa},
+         familyi={P\bibinitperiod},
+         given={Raluca\bibnamedelima Ada},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Stoica},
+         familyi={S\bibinitperiod},
+         given={Ion},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PDA}{%
+         family={Patterson},
+         familyi={P\bibinitperiod},
+         given={David\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
     }
-    \list{organization}{1}{%
-      {{Fraunhofer Institute for Integrated Circuits IIS }}%
+    \list{language}{1}{%
+      {en}%
     }
-    \strng{namehash}{KJ1}
-    \strng{fullhash}{KJ1}
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{Computer Science - Operating Systems}
+    \strng{namehash}{JE+1}
+    \strng{fullhash}{JESSJSVTCCKAPQSVCJKKYNGJEPRASIPDA1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Kol22}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{addendum}{Zuletzt abgerufen: 13. Oktober 2023}
-    \field{title}{6G-Sky}
-    \verb{url}
-    \verb https://6g-sky.net/
+    \field{labeltitlesource}{shorttitle}
+    \field{labelalpha}{Jon+19}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{abstract}{%
+    Serverless cloud computing handles virtually all the system administration operations needed to make it easier for programmers to use the cloud. It provides an interface that greatly simpliﬁes cloud programming, and represents an evolution that parallels the transition from assembly language to high-level programming languages. This paper gives a quick history of cloud computing, including an accounting of the predictions of the 2009 Berkeley View of Cloud Computing paper, explains the motivation for serverless computing, describes applications that stretch the current limits of serverless, and then lists obstacles and research opportunities required for serverless computing to fulﬁll its full potential. Just as the 2009 paper identiﬁed challenges for the cloud and predicted they would be addressed and that cloud use would accelerate, we predict these issues are solvable and that serverless computing will grow to dominate the future of cloud computing.%
+    }
+    \verb{doi}
+    \verb 10.48550/arXiv.1902.03383
     \endverb
-    \field{month}{04}
-    \field{year}{2022}
+    \field{note}{arXiv:1902.03383 [cs]}
+    \field{shorttitle}{Cloud {Programming} {Simplified}}
+    \field{title}{Cloud {Programming} {Simplified}: {A} {Berkeley} {View} on {Serverless} {Computing}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1902.03383
+    \endverb
+    \verb{file}
+    \verb PDF:/Users/valentin/Zotero/storage/3HSRK2MJ/Jonas et al. - 2019 - Clo
+    \verb ud Programming Simplified A Berkeley View on Serverless Computing.pdf
+    \verb :application/pdf
+    \endverb
+    \field{month}{02}
+    \field{year}{2019}
+    \field{urlday}{24}
+    \field{urlmonth}{03}
+    \field{urlyear}{2025}
   \endentry
 
   \entry{masanet_recalibrating_2020}{article}{}
@@ -782,435 +627,6 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{nitrides46g}{online}{}
-    \list{organization}{1}{%
-      {{Bundesministerium für Bildung und Forschung}}%
-    }
-    \field{shorthand}{Nit22}
-    \field{label}{Nit22}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Nit22}
-    \field{sortinit}{N}
-    \field{sortinithash}{N}
-    \field{addendum}{Zuletzt abgerufen: 13. Oktober 2023}
-    \field{title}{Nitrides-4-6G -- Vernetzung und Sicherheit digitaler Systeme}
-    \verb{url}
-    \verb https://www.forschung-it-sicherheit-kommunikationssysteme.de/projekte
-    \verb /nitrides-4-6g-1
-    \endverb
-    \field{month}{11}
-    \field{year}{2022}
-  \endentry
-
-  \entry{orbitsedge2022}{online}{}
-    \list{organization}{1}{%
-      {{OrbitsEdge, Inc.}}%
-    }
-    \field{shorthand}{Orb23}
-    \field{label}{Orb23}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Orb23}
-    \field{sortinit}{O}
-    \field{sortinithash}{O}
-    \field{addendum}{Zuletzt abgerufen: 13. Oktober 2023}
-    \field{title}{SATFRAME\textsuperscript{TM} 445 LE - An Overview}
-    \verb{url}
-    \verb https://orbitsedge.com/satframe
-    \endverb
-    \field{year}{2023}
-  \endentry
-
-  \entry{paper_pfandzelter2020_tinyfaas}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{PTBD1}
-    \strng{fullhash}{PTBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PB20}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{booktitle}{Proceedings of the Second {IEEE} International Conference on Fog Computing}
-    \verb{doi}
-    \verb 10.1109/ICFC49376.2020.00011
-    \endverb
-    \field{pages}{17\bibrangedash 24}
-    \field{series}{ICFC 2020}
-    \field{title}{{tinyFaaS}: A Lightweight FaaS Platform for Edge Environments}
-    \verb{url}
-    \verb https://doi.org/10.1109/ICFC49376.2020.00011
-    \endverb
-    \field{venue}{Sydney, NSW, Australia}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{month}{04}
-    \field{year}{2020}
-  \endentry
-
-  \entry{paper_pfandzelter2021_LEO_CDN}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{PTBD1}
-    \strng{fullhash}{PTBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PB21}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{booktitle}{Proceedings of the 21st IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing}
-    \verb{doi}
-    \verb 10.1109/CCGrid51090.2021.00066
-    \endverb
-    \field{pages}{565\bibrangedash 575}
-    \field{series}{CCGrid '21}
-    \field{title}{Edge (of the Earth) Replication: Optimizing Content Delivery in Large LEO Satellite Communication Networks}
-    \verb{url}
-    \verb https://doi.org/10.1109/CCGrid51090.2021.00066
-    \endverb
-    \field{venue}{Melbourne, Australia}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{month}{05}
-    \field{year}{2021}
-  \endentry
-
-  \entry{paper_pfandzelter2022_celestial}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Association for Computing Machinery (ACM)}%
-    }
-    \strng{namehash}{PTBD1}
-    \strng{fullhash}{PTBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PB22}
-    \field{extraalpha}{1}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{booktitle}{Proceedings of the 23rd ACM/IFIP International Middleware Conference}
-    \verb{doi}
-    \verb 10.1145/3528535.3531517
-    \endverb
-    \field{pages}{69\bibrangedash 81}
-    \field{series}{Middleware '22}
-    \field{title}{Celestial: Virtual Software System Testbeds for the LEO Edge}
-    \verb{url}
-    \verb https://doi.org/10.1145/3528535.3531517
-    \endverb
-    \field{venue}{Quebec, QC, Canada}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{month}{11}
-    \field{year}{2022}
-  \endentry
-
-  \entry{techreport_pfandzelter2022_celestial_extended}{report}{}
-    \name{author}{2}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PTBD1}
-    \strng{fullhash}{PTBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PB22}
-    \field{extraalpha}{2}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{number}{20221}
-    \field{title}{Testing LEO Edge Software Systems with \textsc{Celestial}}
-    \list{location}{1}{%
-      {Berlin, Germany}%
-    }
-    \list{institution}{1}{%
-      {TU Berlin \& ECDF, Mobile Cloud Computing Research Group}%
-    }
-    \field{type}{techreport}
-    \field{month}{04}
-    \field{year}{2022}
-  \endentry
-
-  \entry{pfandzelter2023mars}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Association for Computing Machinery (ACM)}%
-    }
-    \strng{namehash}{PTBD1}
-    \strng{fullhash}{PTBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PB23}
-    \field{extraalpha}{1}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{booktitle}{Proceedings of the 1st ACM MobiCom Workshop on Satellite Networking and Computing}
-    \verb{doi}
-    \verb 10.1145/3614454.3622997
-    \endverb
-    \field{pages}{7\bibrangedash 12}
-    \field{series}{SatCom '23}
-    \field{title}{Can Orbital Servers Provide Mars-Wide Edge Computing?}
-    \verb{url}
-    \verb https://doi.org/10.1145/3614454.3622997
-    \endverb
-    \field{venue}{Madrid, Spain}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{month}{10}
-    \field{year}{2023}
-  \endentry
-
-  \entry{pfandzelter2023failure}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Association for Computing Machinery (ACM)}%
-    }
-    \strng{namehash}{PTBD1}
-    \strng{fullhash}{PTBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PB23}
-    \field{extraalpha}{2}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{booktitle}{Proceedings of the the 1st ACM Workshop on LEO Networking and Communication 2023}
-    \verb{doi}
-    \verb 10.1145/3614204.3616106
-    \endverb
-    \field{pages}{19\bibrangedash 24}
-    \field{series}{LEO-NET '23}
-    \field{title}{Edge Computing in Low-Earth Orbit -- What Could Possibly Go Wrong?}
-    \verb{url}
-    \verb https://doi.org/10.1145/3614204.3616106
-    \endverb
-    \field{venue}{Madrid, Spain}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{month}{10}
-    \field{year}{2023}
-  \endentry
-
-  \entry{pfandzelter2023enoki}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {ACM}%
-    }
-    \strng{namehash}{PTBD1}
-    \strng{fullhash}{PTBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PB23}
-    \field{extraalpha}{3}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{booktitle}{Proceedings of the 2nd International Workshop on Middleware for the Edge}
-    \verb{doi}
-    \verb 10.1145/3630180.3631203
-    \endverb
-    \field{pubstate}{forthcoming}
-    \field{series}{MiddleWEdge '23}
-    \field{title}{Enoki: Stateful Distributed FaaS from Edge to Cloud}
-    \verb{url}
-    \verb https://doi.org/10.1145/3630180.3631203
-    \endverb
-    \list{location}{1}{%
-      {Bologna, Italy}%
-    }
-    \field{month}{12}
-    \field{year}{2023}
-    \warn{\item Can't use 'location' + 'address'}
-  \endentry
-
-  \entry{pfandzelter2023celestialdemo}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{PTBD1}
-    \strng{fullhash}{PTBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PB23}
-    \field{extraalpha}{4}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{booktitle}{Proceedings of the 11th IEEE International Conference on Cloud Engineering}
-    \verb{doi}
-    \verb 10.1109/IC2E59103.2023.00034
-    \endverb
-    \field{pages}{224\bibrangedash 225}
-    \field{series}{IC2E '23}
-    \field{title}{Evaluating LEO Edge Software in the Cloud with Celestial}
-    \verb{url}
-    \verb https://doi.org/10.1109/IC2E59103.2023.00034
-    \endverb
-    \field{venue}{Boston, MA, USA}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{month}{09}
-    \field{year}{2023}
-  \endentry
-
-  \entry{paper_pfandzelter2021_LEO_serverless}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=HJ}{%
-         family={Hasenburg},
-         familyi={H\bibinitperiod},
-         given={Jonathan},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Association for Computing Machinery (ACM)}%
-    }
-    \strng{namehash}{PTHJBD1}
-    \strng{fullhash}{PTHJBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PHB21}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{booktitle}{Proceedings of the 4th International Workshop on Edge Systems, Analytics and Networking}
-    \verb{doi}
-    \verb 10.1145/3434770.3459736
-    \endverb
-    \field{pages}{43\bibrangedash 48}
-    \field{series}{EdgeSys '21}
-    \field{title}{Towards a Computing Platform for the LEO Edge}
-    \verb{url}
-    \verb https://doi.org/10.1145/3434770.3459736
-    \endverb
-    \field{venue}{Online, United Kingdom}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{month}{04}
-    \field{year}{2021}
-  \endentry
-
   \entry{patros_2021_towards_sustainable_serverless}{article}{}
     \name{author}{6}{}{%
       {{hash=PP}{%
@@ -1277,100 +693,60 @@
     \field{year}{2021}
   \endentry
 
-  \entry{pfandzelter2023fred}{article}{}
-    \name{author}{5}{}{%
-      {{hash=PT}{%
-         family={Pfandzelter},
-         familyi={P\bibinitperiod},
-         given={Tobias},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=JN}{%
-         family={Japke},
-         familyi={J\bibinitperiod},
-         given={Nils},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=ST}{%
-         family={Schirmer},
+  \entry{sharma_accountable_2024}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SP}{%
+         family={Sharma},
          familyi={S\bibinitperiod},
-         given={Trever},
-         giveni={T\bibinitperiod},
+         given={Prateek},
+         giveni={P\bibinitperiod},
       }}%
-      {{hash=HJ}{%
-         family={Hasenburg},
-         familyi={H\bibinitperiod},
-         given={Jonathan},
-         giveni={J\bibinitperiod},
+      {{hash=FA}{%
+         family={Fuerst},
+         familyi={F\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
       }}%
-      {{hash=BD}{%
-         family={Bermbach},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
+    }
+    \list{language}{1}{%
+      {en}%
     }
     \list{publisher}{1}{%
-      {Wiley}%
+      {ACM}%
     }
-    \strng{namehash}{PT+1}
-    \strng{fullhash}{PTJNSTHJBD1}
+    \strng{namehash}{SPFA1}
+    \strng{fullhash}{SPFA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{Pfa+23}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \verb{doi}
-    \verb 10.1002/spe.3237
-    \endverb
-    \field{issn}{0038-0644}
-    \field{number}{10}
-    \field{pages}{1958\bibrangedash 1981}
-    \field{title}{Managing Data Replication and Distribution in the Fog with FReD}
-    \verb{url}
-    \verb https://doi.org/10.1002/spe.3237
-    \endverb
-    \field{volume}{53}
-    \list{location}{1}{%
-      {Hoboken, NJ, USA}%
-    }
-    \field{journaltitle}{Software: Practice and Experience}
-    \field{month}{10}
-    \field{year}{2023}
-  \endentry
-
-  \entry{cloud56}{online}{}
-    \name{author}{2}{}{%
-      {{hash=ST}{%
-         family={Sankal},
-         familyi={S\bibinitperiod},
-         given={Talib},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=KN}{%
-         family={König},
-         familyi={K\bibinitperiod},
-         given={Niels},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {{Fraunhofer-Institut für Produktionstechnologie IPT}}%
-    }
-    \strng{namehash}{STKN1}
-    \strng{fullhash}{STKN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{SK23}
+    \field{labelalpha}{SF24}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{addendum}{Zuletzt abgerufen: 13. Oktober 2023}
-    \field{title}{Nitrides-4-6G -- Vernetzung und Sicherheit digitaler Systeme}
-    \verb{url}
-    \verb https://www.ipt.fraunhofer.de/de/projekte/cloud-56.html
+    \field{abstract}{%
+    Cloud computing is a significant and growing cause of carbon emissions. Understanding the energy consumption and carbon footprints of cloud applications is a fundamental prerequisite to raising awareness, designing sustainability metrics, and creating targeted system optimizations. In this paper, we address the challenges of providing accurate and full-system (not just CPU) carbon footprints for serverless (FaaS) functions. To the best of our knowledge, this is the first work which develops an energy and carbon metrology framework for FaaS.%
+    }
+    \field{booktitle}{Proceedings of the {ACM} {Symposium} on {Cloud} {Computing}}
+    \verb{doi}
+    \verb 10.1145/3698038.3698531
     \endverb
-    \field{month}{04}
-    \field{year}{2023}
+    \field{isbn}{979-8-4007-1286-9}
+    \field{pages}{522\bibrangedash 541}
+    \field{title}{Accountable {Carbon} {Footprints} and {Energy} {Profiling} {For} {Serverless} {Functions}}
+    \verb{url}
+    \verb https://dl.acm.org/doi/10.1145/3698038.3698531
+    \endverb
+    \list{location}{1}{%
+      {Redmond WA USA}%
+    }
+    \verb{file}
+    \verb PDF:/Users/valentin/Zotero/storage/FI6BCPCD/Sharma and Fuerst - 2024
+    \verb - Accountable Carbon Footprints and Energy Profiling For Serverless F
+    \verb unctions.pdf:application/pdf
+    \endverb
+    \field{month}{11}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{04}
+    \field{urlyear}{2025}
   \endentry
 
   \entry{schirmer2023nightshift}{inproceedings}{}
@@ -1596,113 +972,120 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{tiansuan2023online}{online}{}
-    \list{organization}{1}{%
-      {{Star Network and Intelligent Computing Laboratory}}%
-    }
-    \field{shorthand}{Tia23}
-    \field{label}{Tia23}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Tia23}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{addendum}{Zuletzt abgerufen: 13. Oktober 2023}
-    \field{title}{Tiansuan Constellation}
-    \verb{url}
-    \verb http://www.tiansuan.org.cn/index.html
-    \endverb
-    \field{month}{10}
-    \field{year}{2023}
-  \endentry
-
-  \entry{wang2021tiansuan}{inproceedings}{}
-    \name{author}{6}{}{%
-      {{hash=WS}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Shangguang},
-         giveni={S\bibinitperiod},
+  \entry{sukprasert_limitations_2024}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=ST}{%
+         family={Sukprasert},
+         familyi={S\bibinitperiod},
+         given={Thanathorn},
+         giveni={T\bibinitperiod},
       }}%
-      {{hash=LQ}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Qing},
-         giveni={Q\bibinitperiod},
-      }}%
-      {{hash=XM}{%
-         family={Xu},
-         familyi={X\bibinitperiod},
-         given={Mengwei},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=MX}{%
-         family={Ma},
-         familyi={M\bibinitperiod},
-         given={Xiao},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=ZA}{%
-         family={Zhou},
-         familyi={Z\bibinitperiod},
-         given={Ao},
+      {{hash=SA}{%
+         family={Souza},
+         familyi={S\bibinitperiod},
+         given={Abel},
          giveni={A\bibinitperiod},
       }}%
-      {{hash=SQ}{%
-         family={Sun},
-         familyi={S\bibinitperiod},
-         given={Qibo},
-         giveni={Q\bibinitperiod},
+      {{hash=BN}{%
+         family={Bashir},
+         familyi={B\bibinitperiod},
+         given={Noman},
+         giveni={N\bibinitperiod},
       }}%
+      {{hash=ID}{%
+         family={Irwin},
+         familyi={I\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Shenoy},
+         familyi={S\bibinitperiod},
+         given={Prashant},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
     }
     \list{publisher}{1}{%
-      {IEEE}%
+      {ACM}%
     }
-    \strng{namehash}{WS+1}
-    \strng{fullhash}{WSLQXMMXZASQ1}
+    \strng{namehash}{ST+2}
+    \strng{fullhash}{STSABNIDSP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{Wan+21}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \field{booktitle}{Proceedings of the 2021 IEEE International Conference on Edge Computing}
+    \field{labelalpha}{Suk+24}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the {Nineteenth} {European} {Conference} on {Computer} {Systems}}
     \verb{doi}
-    \verb 10.1109/EDGE53862.2021.00022
+    \verb 10.1145/3627703.3650079
     \endverb
-    \field{pages}{94\bibrangedash 101}
-    \field{series}{EDGE}
-    \field{title}{Tiansuan Constellation: An Open Research Platform}
+    \field{isbn}{979-8-4007-0437-6}
+    \field{pages}{924\bibrangedash 941}
+    \field{title}{On the {Limitations} of {Carbon}-{Aware} {Temporal} and {Spatial} {Workload} {Shifting} in the {Cloud}}
     \verb{url}
-    \verb https://doi.org/10.1109/EDGE53862.2021.00022
+    \verb https://dl.acm.org/doi/10.1145/3627703.3650079
     \endverb
-    \field{venue}{Chicago, IL, USA}
     \list{location}{1}{%
-      {New York, NY, USA}%
+      {Athens Greece}%
     }
-    \field{month}{09}
-    \field{year}{2021}
+    \verb{file}
+    \verb PDF:/Users/valentin/Zotero/storage/Q7QKPDLJ/Sukprasert et al. - 2024
+    \verb - On the Limitations of Carbon-Aware Temporal and Spatial Workload Sh
+    \verb ifting in the Cloud.pdf:application/pdf
+    \endverb
+    \field{month}{04}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{04}
+    \field{urlyear}{2025}
   \endentry
 
-  \entry{wang2022tiansuan2}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=WS}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Shangguang},
-         giveni={S\bibinitperiod},
+  \entry{young_true_nodate}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=YEG}{%
+         family={Young},
+         familyi={Y\bibinitperiod},
+         given={Ethan\bibnamedelima G},
+         giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=ZP}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Pengfei},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CHT}{%
+         family={Caraza-Harter},
+         familyi={C\bibinithyphendelim H\bibinitperiod},
+         given={Tyler},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=ADAC}{%
+         family={Arpaci-Dusseau},
+         familyi={A\bibinithyphendelim D\bibinitperiod},
+         given={Andrea\bibnamedelima C},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=ADRH}{%
+         family={Arpaci-Dusseau},
+         familyi={A\bibinithyphendelim D\bibinitperiod},
+         given={Remzi\bibnamedelima H},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
     }
-    \strng{namehash}{WS1}
-    \strng{fullhash}{WS1}
+    \strng{namehash}{YEG+1}
+    \strng{fullhash}{YEGZPCHTADACADRH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{Wan22}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \field{booktitle}{Proceedings of the Proceedings of LEOCONN 2022}
-    \field{title}{Tiansuan Constellation: An Open Research Platform for Satellite Network and Computing}
-    \field{venue}{Sydney, Australia}
-    \field{month}{10}
-    \field{year}{2022}
+    \field{labelalpha}{You+19}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{booktitle}{11th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 19)}
+    \field{title}{The {True} {Cost} of {Containing}: {A} {gVisor} {Case} {Study}}
+    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput

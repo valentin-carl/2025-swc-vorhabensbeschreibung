@@ -463,12 +463,10 @@ INPUT sections/1_intro.tex
 INPUT ./sections/2_standWiss.tex
 INPUT ./sections/2_standWiss.tex
 INPUT sections/2_standWiss.tex
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathfonts/cmsscsci10.tfm
 INPUT ./sections/3_partner.tex
 INPUT ./sections/3_partner.tex
 INPUT sections/3_partner.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT ./sections/4_arbeitsplan.tex
 INPUT ./sections/4_arbeitsplan.tex
 INPUT sections/4_arbeitsplan.tex
@@ -528,8 +526,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/sansmathfonts/cmssbx
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/sansmathfonts/cmssbx17.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/sansmathfonts/cmssbx8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/sansmathfonts/cmsscsc10.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/sansmathfonts/cmsscsci10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

@@ -17,7 +17,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10320 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
 Warning--string name "missing" is undefined
@@ -27,90 +26,6 @@ Warning--string name "missing" is undefined
 Warning--string name "missing" is undefined
 --line 80 of file bibliography.bib
 Warning--string name "missing" is undefined
---line 97 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 131 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 138 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 146 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 147 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 148 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 155 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 158 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 159 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 160 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 163 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 164 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 165 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 182 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 199 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 216 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 233 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 250 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 267 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 284 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 301 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 309 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 313 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 315 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 325 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 327 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 328 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 339 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 340 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 351 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 353 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 357 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 363 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 369 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 375 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 387 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 388 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 393 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 399 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 405 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 411 of file bibliography.bib
-Warning--string name "missing" is undefined
---line 425 of file bibliography.bib
-Warning--string name "missing" is undefined
 --line 1480 of file bibliography.bib
 Warning--string name "missing" is undefined
 --line 1486 of file bibliography.bib
@@ -119,45 +34,45 @@ Warning--string name "missing" is undefined
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 38 entries,
+You've used 18 entries,
             6399 wiz_defined-function locations,
-            1503 strings with 24212 characters,
-and the built_in function-call counts, 363431 in all, are:
-= -- 28397
-> -- 7560
-< -- 2682
-+ -- 12020
-- -- 3610
-* -- 25413
-:= -- 39433
+            1371 strings with 22153 characters,
+and the built_in function-call counts, 252530 in all, are:
+= -- 20486
+> -- 5728
+< -- 1261
++ -- 9834
+- -- 3612
+* -- 19103
+:= -- 31192
 add.period$ -- 0
-call.type$ -- 38
-change.case$ -- 37
-chr.to.int$ -- 388
-cite$ -- 74
-duplicate$ -- 38730
-empty$ -- 29692
-format.name$ -- 2930
-if$ -- 73211
+call.type$ -- 18
+change.case$ -- 17
+chr.to.int$ -- 346
+cite$ -- 34
+duplicate$ -- 25282
+empty$ -- 19551
+format.name$ -- 1917
+if$ -- 48342
 int.to.chr$ -- 0
-int.to.str$ -- 145
+int.to.str$ -- 64
 missing$ -- 0
-newline$ -- 1708
-num.names$ -- 2673
-pop$ -- 13881
+newline$ -- 1091
+num.names$ -- 1119
+pop$ -- 6912
 preamble$ -- 1
-purify$ -- 1730
+purify$ -- 675
 quote$ -- 0
-skip$ -- 11271
+skip$ -- 5234
 stack$ -- 0
-substring$ -- 49717
-swap$ -- 8454
-text.length$ -- 1591
-text.prefix$ -- 56
+substring$ -- 39625
+swap$ -- 4648
+text.length$ -- 976
+text.prefix$ -- 32
 top$ -- 1
-type$ -- 1278
+type$ -- 599
 warning$ -- 0
-while$ -- 5039
+while$ -- 3756
 width$ -- 0
-write$ -- 1671
-(There were 48 warnings)
+write$ -- 1074
+(There were 6 warnings)

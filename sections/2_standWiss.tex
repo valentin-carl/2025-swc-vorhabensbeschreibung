@@ -6,34 +6,78 @@
 % - Hinweis auf wichtigste aktuelle Projekte / Methoden (keine akademisch vollständigen Beschreibungen, Beschreibung muss zielbezogen sein, Referenzen möglich, aber nicht notwendig)
 % - Abgrenzung zu aktuellen und laufenden Vorhaben mit Förderkatalog der Bundesregierung (\url{https://foerderportal.bund.de/foekat/jsp/StartAction.do}) und früheren SWC Projekten
 
-Das Projekt SPENCER baut auf einer soliden Basis wissenschaftlicher Vorarbeiten einer kleinen aber aktiven Forschungsgemeinde im Bereich Edge"=Computing in Satellitennetzwerken auf.
-Den Anstoß zur aktiven Erforschung von Softwarebereitstellung in Satellitennetzwerken gaben unter anderem Bhattacherjee et al.~\cite{Bhattacherjee2020-kr} mit einer Machbarkeitsstudie, in der die Möglichkeiten und Anwendungsfälle von Edge und In-Network Computing in massiven LEO-Satellitennetzwerken umrissen werden.
-Zusätzlich beschrieben etwa Bhosale et al.~\cite{Bhosale2020-aa} mit \emph{Krios} ein erstes Anwendungsorganisationsparadigma für Edge und In-Network Computing in Satellitennetzwerken.
-Krios basiert auf dem Container-Verwaltungssystem \emph{Kubernetes} und weist damit eine hohe Anzahl an Ineffizienzen und Problemen auf, die im Projekt SPENCER mit einem Serverless-Ansatz behoben werden.
+\newcommand{\absatz}[1]{\emph{#1.}}
 
-Zudem ist das Projekt \emph{Tiansuan Constellation} der Beijing University of Posts and Telecommunications, Spacety und der Peking University hervorzuheben, in dem mit der Kombination industrieller und akademischer Ressourcen eine Open-Source Dienstplattform für Satelliten-Computing-Experimente im erdnahen Orbit entwickelt wird~\cite{wang2021tiansuan,wang2022tiansuan2,tiansuan2023online}.
-Neben der Entwicklung von Anwendungen, Netzwerktechnologien und Software-Plattformen werden im Projekt auch eigene Satelliten entwickelt und bereitgestellt, auf denen Forschungsprototypen in realistischer Umgebung evaluiert werden können.
+% overall: es gibt forschung über sustainable serverless computing => sharma
+% wie ist FaaS grade?
+% wird benutzt selber hosten und public cloud
+% auf open-source-plattformen: k8s und ganz viel virtualisierung, energie-ineffizient! (overhead gvisor paper) 
+% auf closed-source/public plattformen: kaum gpu support, was ai + serverless schwer macht
+% aber: in der literatur einige ansätze wie man in beiden fällen mehr sustainability macht
+    % was aber noch fehlt ist wie die serverless platform selber bestimmt, wie/wann/welche hardware benutzt wird
+    % muss also noch alles zusammen gepackt werden
 
-Neben diesen akademischen Arbeiten und Projekten beschäftigen sich bereits Akteure der Industrie mit Edge"=Computing im erdnahen Orbit.
-Beispielsweise konnte Hewlett Packard Enterprise mit den Projekten \emph{HPE Spaceborne Computer} und \emph{HPE Spaceborne Computer 2} kommerzielle, frei verfügbare (\emph{commercial off-the-shelf}, COTS) Rechenserver auf der Internationalen Raumstation (\emph{International Space Station}, ISS) bereitstellen~\cite{hpespaceborne}.
-Das Unternehmen OrbitsEdge stellte zudem das Produkt \emph{SATFRAME\textsuperscript{TM} 445 LE} vor, das Rahmenbedingungen für COTS-Rechen-Hardware im erdnahen Orbit bietet~\cite{orbitsedge2022}.
+% 1 Satz was FaaS ist, funktionen erklären
+% dann dass so halt ganz viele leute sich ressourcen teilen können
+% warum ist faas cool? programmier abstraktion wodurch sich entwickler nicht um skalierbarkeit kümmern müssen und pay per use billing ...
+% this model also has much untapped potential to be the key abstration for sustainable/green computing/ai
+%The GEKO project builds on a solid foundation of scientific groundwork laid by a small but active research community in the field of sustainable serverless computing. % => auch schon im SWC gefördert
+% sharma kurz sagen was die vision ist
 
-Die Übersicht über bestehende Arbeiten im Feld weist einen Mangel an Forschungsaktivitäten in Deutschland und Europa auf.
-Hier kann auf Vorarbeiten der Projektleitung verwiesen werden, die im Rahmen des DFG-geförderten Projektes \emph{FogStore} am Fachgebiet Mobile Cloud Computing der Technischen Universität Berlin erbracht wurden.
-Beispielsweise wurden bereits die bestehenden Forschungslücken in der Anwendungsorganisation für Edge und In-Network Computing in massiven LEO-Satellitennetzwerken dargelegt und vorgeschlagen, dass ein Serverless-Ansatz notwendig ist~\cite{paper_pfandzelter2021_LEO_serverless}.
-Zudem konnten bereits erste Anwendungen für Edge"=Computing in Satellitennetzwerken vorschlagen werden~\cite{paper_pfandzelter2021_LEO_CDN,pfandzelter2023mars}.
-Mit \emph{\textsc{Celestial}} wurde ein Open-Source Werkzeugset für die Experiment-getriebene Evaluierung von Softwaresystemen für Edge und In-Networking Computing in LEO-Satellitennetzwerken vorgestellt, das skalierbar und effizient Satelliten-Infrastruktur in der Cloud emuliert~\cite{pfandzelter2023celestialdemo,paper_becker2022_netem,pfandzelter2023failure,paper_pfandzelter2022_celestial,techreport_pfandzelter2022_celestial_extended}.
-Es sei zudem auf Arbeiten des Projektleiters im Bereich Serverless"=Computing in Edge"=Computing verwiesen~\cite{paper_pfandzelter2020_tinyfaas,pfandzelter2023fred,pfandzelter2023enoki}.
+% how is faas doing at the moment / in industry
+% - either self hosted in open source platforms or public cloud which are opaque for researches
+% - key characteristic: large scale resource sharing between many tenants
+%   - hence isolation between functions is key!! now done at software-level but that comes with large costs (performance, efficiency, ...)
+% - very energy-inefficient! but doesn't have to be like this forever
+% - public cloud: wenig gpu support, dadurch ist es schwer, überhaupt alle möglichen arten von anwendungen damit zu realisieren
+% - programming model also allows for areas where resources are extremely limited (e.g., leo edge)
+% - open source mostly kubernetes-based, which also introduces large overheads and isn't really made for faas
 
-Darüber hinaus gibt es Forschungsprojekte mit Förderung durch die Bundesregierung, die einen Bezug zu den Inhalten des Projekts SPENCER haben, besonders im Bereich Telekommunikationstechnologien der sechsten Generation (6G).
-Beispielsweise untersuchen die Projekte \emph{6G-SKY}~\cite{6gsky} (Verbundprojekt gefördert durch das Bundesministerium für Wirtschaft und Klimaschutz, BMWK) und \emph{6G-TakeOff}~\cite{6gtakeoff} (Verbundprojekt gefördert durch das BMBF) holistische 3D-Netzwerkarchitekturen mit Satellitenkonnektivität.
-Ähnlich entwickelt das Projekt \emph{Nitrides-4-6G}~\cite{nitrides46g} (Verbundprojekt gefördert durch das BMBF) Nitrid-basierte, dispersionsarme, effiziente Millimeterwellenbauelemente für strahlungsfeste Satelliten-Kommunikation.
-Anders als das Projekt SPENCER kombinieren diese Projekte jedoch nicht Satellitennetzwerktechnik mit Edge und In-Network Computing.
-Diese Bereiche werden eher in Projekten wie \emph{KeeCEK}~\cite{keecek} (Projekt gefördert durch das Bundesministerium für Digitales und Verkehr, BMDV), \emph{CLOUD56}~\cite{cloud56} und \emph{6G NeXt}~\cite{6gnext} (beide Verbundprojekte gefördert durch das BMBF).
+% was macht die serverless forschung so
+% - viel um performance (i.e. latenz) von einzelnen funktionsaufrufen zu verbessern
+% - erste schrite die in richtung carbon accounting gehen, erste schritte mit overhead quantifizieren und einzelnen funktionen emissionen zuweisen (difficult technical challenge)
+% - ganz viel scheduling, spatio-temportal, aber funktioniert nicht richtig: depending on the carbon intensity of the grid ... 
+% - ganz viel kubernetes gedöns aber hat mega overhead wenn man energie effizienz machen will
 
-Im aktuellen Stand der Wissenschaft und Technik bleiben entscheidene Forschungsfragen jedoch bisher unbeantwortet, die im Projekt SPENCER addressiert werden.
-Es gibt bisher keine konkreten Vorschläge, welche Anwendungen sich für Edge-Computing in LEO-Satellitennetzwerken besonders eignen.
-Besonders wichtig ist hier eine Definition der für die Anwendungen notwendigen Resourcen und Metriken, um eine objektive Bewertung von Ansätzen für Software- und Hardware-Plattformen für Edge-Computing in Satellitennetzwerken zu ermöglichen.
-Darüber hinaus ist bisher wenig erforscht, wie von der hohen Netzwerkdynamik in erdnahen Satellitennetzwerken abstrahiert werden kann, da Edge-Anwendungen häufig ortsgebunden bereitgestellt werden sollen.
-Schlussendlich ist bisher auch unklar, ob Serverless"=Computing für die geringen Resourcen in Edge-Infrastruktur auf Satelliten oder die Skalierbarkeit über tausende von Satelliten-Servern hinweg erweitert oder angepasst werden muss.
-Diese Fragen stellen die Kernforschungsziele des Projekts SPENCER dar.
+% was für andere projekte gibt es von der bundesregierung?
+% ???
+
+% was ist die lücke die gecko füllt?
+% - open source also nicht die probleme wie public faas
+% - ermöglicht mehr anwendungen auf faas weil + gpu und deshalb auch AI
+% - allerdings direkter fokus darauf, dass die serverless platform auch die hardware nutztung direkt bestimmt, i.e. kein mismatch dazwischen wofür systeme gebaut sind => bestmögliche ressourcennutzung
+
+
+
+
+
+Function-as-a-Service is a serverless programming model in which developers express applications as small, stateless functions that are invoked on demand by the cloud platform. 
+This abstraction frees developers from concerns about scalability and infrastructure management, while enabling large-scale resource sharing across many tenants. 
+Combined with a pay-per-use billing model, FaaS has quickly become a central paradigm in both industry and research for building elastic applications~\cite{jonas_cloud_2019}.
+Importantly, this model also has untapped potential as a cornerstone for sustainable computing: If orchestrated carefully, shared resources can be provisioned more efficiently at platform level than if each developer had to optimize for sustainability individually.
+The GEKO project builds on a solid foundation of scientific groundwork laid by a small but active research community in the field of sustainable serverless computing. 
+This includes early explorations into how serverless abstractions could become enablers for energy-aware resource management and carbon accounting. 
+A cornerstone in this emerging area is the articulation of a broader vision for sustainable serverless computing, which frames FaaS as a potential driver of greener cloud services and highlights key research gaps that remain open~\cite{sharma_challenges_2023}.
+
+In today's practice, however, serverless computing is far from energy efficient.
+Current FaaS deployments follow two dominant paths. 
+On the one hand, organizations operate open-source serverless platforms on top of Kubernetes or similar orchestration systems. 
+While this approach offers flexibility, it suffers from heavy reliance on virtualization and container isolation, which introduces substantial overheads; these, in turn, increase per-request energy consumption between 15$\times$ and 30$\times$, depending on the virtualization technique used~\cite{sharma_challenges_2023}.
+Recent studies show that software-based isolation layers such as gVisor can significantly degrade efficiency, limiting the potential for sustainable operation~\cite{young_true_nodate}. 
+On the other hand, large public cloud providers offer commercial FaaS services, which remain largely opaque to researchers and offer only limited resource control (\needcheck{EXAMPLES}). 
+In particular, GPU support is mostly absent from these platforms, making it difficult to realize AI workloads in a serverless fashion.
+Despite these limitations, the research community has begun to address sustainability in serverless computing. 
+Early work has explored quantifying the energy overheads of function isolation and assigning carbon intensity metrics to individual function invocations~\cite{sharma_accountable_2024}.
+Other studies have examined spatio-temporal scheduling, where functions are steered to data centers with lower grid carbon intensity (\needcheck{EXAMPLES, viele}). 
+However, these approaches often conflict with the latency requirements of serverless workloads and cannot fully exploit hardware-level optimizations~\cite{sukprasert_limitations_2024}. 
+The majority of existing work still focuses on performance-oriented goals, such as reducing cold start latencies, rather than systematically reducing the energy footprint of the platform (\needcheck{EXAMPLES, viele}).
+In the context of artificial intelligence, the gap is even more pronounced. 
+Modern inference workloads are increasingly GPU-bound, but the lack of GPU integration in public serverless platforms is a contributor to preventing FaaS from being used for scalable AI inference. 
+While research in AI sustainability has made progress on model-level and hardware-level optimizations (\needcheck{EXAMPLES}), the platform dimension, i.e., deciding how, when, and which hardware is activated for inference, remains largely unexplored. 
+As a result, serverless computing today does not yet realize its potential as a key abstraction for sustainable AI.
+
+Against this background, the GEKO project addresses a clear research gap. 
+Unlike public FaaS platforms, GEKO builds on an open-source foundation that allows transparent investigation of GPU integration and orchestration. 
+Unlike existing open-source solutions, it focuses not only on enabling GPU support but also on making the serverless platform itself responsible for hardware usage decisions. 
+This system-level focus avoids the mismatch between application-level assumptions and platform-level realities, ensuring that resources are shared and utilized as efficiently as possible. 
+As a result, GEKO directly advances the state of the art in sustainable FaaS and establishes the groundwork for scalable, energy-efficient AI inference.

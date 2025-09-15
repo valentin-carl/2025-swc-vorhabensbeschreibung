@@ -2,6 +2,7 @@
 \section{Task Definition and Motivation}
 
 % Formulation of the scientific question: Social relevance, practical relevance, practical application example
+
 Function-as-a-Service (FaaS) is a serverless computing model in which developers write small, stateless functions that are invoked by a cloud platform in response to external requests.
 In this model, the platform manages nearly all aspects of execution, including resource allocation, auto-scaling, and the runtime environment.
 Especially in edge environments, where resources are scarce, FaaS has proven to be a suitable paradigm for sharing hardware between applications and allocating resources only when they are actually needed.
@@ -36,16 +37,6 @@ The goal of the \textbf{GEKO} (\enquote{\textbf{G}PUs \textbf{e}nergieeffizient 
 \subsection{Focus and objectives}
 % Grobe Ziele, Menthodenschwerpunkte, Neuheutsgrad des Ansatzes
 
-%Edge- und In-Network-Computing bilden die grundlegende Infrastruktur für moderne Anwendungsdomänen wie das Internet of Things (IoT), erweiterte Realitäten (XR), High"=Bandwidth"=Web"=Technologien und die Vehicle"=to"=X Kommunikation (V2X).
-%Diese Technologien erfordern verteilte Hardware und Micro-Datacenter, was mit erheblichen Investitionen verbunden ist und daher vor allem in be\-völk\-er\-ungs\-rei\-chen und kaufkräftigen Regionen wie Großstädten eingesetzt wird.
-%In ländlichen Regionen, auf Inseln sowie in Flugzeugen und Schiffen, die nicht über Glasfaser- oder Mobilfunkverbindungen versorgt werden können, sind solche Innovationen bislang nicht verfügbar.
-%Um Edge-Dienste global verfügbar zu machen, müssen In-Network-Computing-Optionen auch in neuartigen nicht-terrestrischen Netzwerken und Satellitennetzwerken angeboten werden, die diesen Regionen künftig Hochgeschwindigkeitsinternetzugang bieten werden.
-%Die effiziente Nutzung begrenzter Ressourcen in Satelliten-Micro-Datacentern für Anwendungen und die nahtlose Integration in terrestrisches Edge- und Cloud-Computing erfordern neuartige Softwareabstraktionen und Software-Plattformen.
-%
-%Im Gegensatz zum etabliertem terrestrischen Edge"=Computing steht das Konzept von Edge"=Computing in Satellitennetzwerken noch am Anfang seiner Entwicklung.
-%Obwohl bereits einige akademische Untersuchungen die Durchführbarkeit dieses Konzepts aufzeigen, werden gleichzeitig neue Herausforderungen für die globale Bereitstellung von Software in Satellitennetzwerken sichtbar.
-%Speziell sind hier sinnvolle Abstraktionen erforderlich, die die hohe Netzwerkdynamik, die globale Verteilung von Software- und Hardwarekomponenten und die begrenzten Ressourcen berücksichtigen.
-
 FaaS has emerged as a promising abstraction for building scalable and elastic applications.
 However, despite its advantages, current FaaS platforms remain highly energy-inefficient~\cite{sharma_challenges_2023}. 
 This inefficiency stems from two key factors: the strong variance in request loads, which often leads to overprovisioning or idle resources, and the expensive software-level isolation required to execute short-lived functions securely~\cite{schirmer2023nightshift,ginzburg_serverless_2020}.
@@ -69,56 +60,39 @@ In doing so, the GEKO project seeks to bridge the gap between today's energy-ine
 \subsection{Scientific and/or technical objectives of the project}
 % Ausdifferenzierung, technische Konkretisierung. Typisches Ziel: Prototyp, Demonstrator - keine Produktentwicklung, kein fertiges Produkt
 
-%Das Hauptziel des Projekts SPENCER ist die Konzeption und Entwicklung dieser Abstraktionen innerhalb einer zuverlässigen und skalierbaren Software-Plattform.
-%In enger Zusammenarbeit mit Projektpartnern werden relevante Anwendungen in den genannten Anwendungsdomänen analysiert, um die Anforderungen an eine globale Edge"=Computing-Infrastruktur in großen Satellitennetzwerken zu definieren.
-%Auf Grundlage dieser Anforderungen werden Softwareabstraktionen entwickelt, um Entwickelnden die einfache, skalierbare und effiziente Bereitstellung von Anwendungen weltweit zu ermöglichen, insbesondere in Regionen, die aufgrund geografischer oder sozialer Bedingungen bislang nicht von terrestrischem Edge"=Computing profitieren konnten.
-%Hierbei wird auch das neuartige Softwareorganisationsparadigma `Serverless"=Computing' eingesetzt, bei dem Software vollständig ereignisgesteuert, elastisch und skalierbar in Cloud- und Edge"=Computing-Bereitstellungen integriert wird.
-%Konkret ergeben sich folgende wissenschaftliche und technische Fragen:
-%
-%\begin{enumerate}
-%    \item Welche Anwendungen und Anwendungsdomänen könnten von einer globalen Edge-Infrastruktur profitieren? Welche Erfolgsmetriken gelten für sie?
-%    \item Wie kann eine Software-Plattform für Edge-Computing in erdnahen Satellitenkonstellationen von der hohen Netzwerkdynamik abstrahieren?
-%    \item Wie muss das Konzept des Serverless"=Computing erweitert oder angepasst werden, um verschiedenste parallele Anwendungsdienste effizient auf stark begrenzter und womöglich fehleranfälliger Edge-Infrastruktur in Satelliten bereitzustellen?
-%\end{enumerate}
-%
-%Um diese Ziele zu erreichen, baut das Projekt auf einer Vielzahl eigener wissenschaftlicher Vorarbeiten in den Bereichen Edge"=Computing, Serverless"=Computing und Satellitennetzwerken auf.
-%Da diese bisher jedoch rein theoretischer Natur sind, soll im Projekt die Entwicklung praxisrelevanter Software im Vordergrund stehen.
-%Diese Software soll der Gemeinschaft nach Abschluss des Projektes als Open-Source-Software zur Verfügung gestellt werden.
-
-
 Building on the motivation outlined above, this project aims to develop the foundations for sustainable and scalable GPU-based inference in serverless platforms. The overarching goal is to transform Function-as-a-Service from an energy-inefficient abstraction into a viable basis for sustainable AI infrastructure. To achieve this, we focus on system-level mechanisms that enable adaptive GPU orchestration, efficient resource sharing, and transparent integration of energy-aware scheduling policies into the serverless execution model.
 
 The concrete objectives of this project are threefold. First, we seek to design and implement the missing platform mechanisms that allow GPUs to be exposed as first-class resources in FaaS environments. Second, we aim to develop orchestration strategies that adapt GPU allocation dynamically to workload fluctuations, minimizing idle energy costs while preserving performance. Third, we plan to evaluate the effectiveness of these strategies across a diverse set of inference workloads and deployment settings, thereby quantifying their impact on both energy efficiency and quality of service.
 
-From these objectives, the following research questions emerge:
+From these objectives, the following technical and research questions emerge:
+\begin{enumerate}
+    \item How can GPUs be exposed and managed as first-class resources in FaaS environments, given the short-lived and highly dynamic nature of serverless functions? % GPU Integration
+    \item What orchestration strategies can dynamically adapt GPU allocation to workload fluctuations, ensuring high utilization while minimizing idle energy costs? % Adaptive Scheduling
+    \item How do the proposed mechanisms perform across diverse AI inference workloads, and what trade-offs emerge between energy efficiency, performance, and scalability? % Evaluation and trade-offs
+\end{enumerate}
 
-GPU Integration – How can GPUs be exposed and managed as first-class resources in FaaS environments, given the short-lived and highly dynamic nature of serverless functions?
-
-Adaptive Scheduling – What orchestration strategies can dynamically adapt GPU allocation to workload fluctuations, ensuring high utilization while minimizing idle energy costs?
-
-Evaluation and Trade-offs – How do the proposed mechanisms perform across diverse AI inference workloads, and what trade-offs emerge between energy efficiency, performance, and scalability?
-
-To address these questions, the project will create an open-source prototype of a serverless platform that integrates GPU support and implements energy-aware orchestration mechanisms. This prototype will be designed to be usable and extensible by both the research community and industry practitioners, providing a practical foundation for future work on sustainable AI infrastructures.
+To address them, the project will create an open-source prototype of a serverless platform that integrates GPU support and implements energy-aware orchestration mechanisms.
+This prototype will be designed to be usable and extensible by both the research community and industry practitioners, providing a practical foundation for future work on sustainable AI infrastructures.
 
 
 \subsection{Relation of the project to funding policy objectives/funding program}
 
 % Zielstellung Software Campus, inhaltlicher Bezug zu Zukunftsstrategie des BMBF https://www.bmbf.de/bmbf/de/forschung/zukunftsstrategie/zukunftsstrategie_node.html
 
-%Das Projekt SPENCER hat einen hohen inhaltlichen Bezug zu den förderpolitischen Zielen und Förderprogrammen des Bundesministeriums für Bildung und Forschung (BMBF).
-%
-%Zunächst ist das Mikroprojekt SPENCER in das Projekt Software Campus eingebettet, das Promotionsstudierende der Informatik weiterbildet und auf zukünftige Führungspositionen vorbereitet, um deutsche und europäische Technologieführerschaft zu verteidigen und Forschungstransfer voranzubringen.
-%Master- und Promotionsstudierende, die im Rahmen des Projekts SPENCER an Konzeption und Entwicklung innovativer Softwareabstraktionen und Software-Plattformen für Edge"=Computing in Satellitennetzwerken mitwirken, vertiefen so ihre praktischen Fähigkeiten und ihr Verständnis für komplexe IT-Systeme.
-%Durch die Teilnahme an Trainings und Weiterbildungen im Bereich (nachhaltiger) Führungskompetenz können komplementär dazu die notwendigen Soft Skills erworben werden.
-%
-%Das Projekt SPENCER ist auch im Kontext der BMBF-Zukunftsstrategie für Forschung und Innovation von großer Bedeutung, da es darauf abzielt, die digitale Souveränität Deutschlands und Europas im Zusammenhang mit der nächsten Generation der Mobilfunktechnologie (6G) sicherzustellen.
-%Durch die Entwicklung von Softwareabstraktionen und Plattformen für Edge- und In"=Network"=Computing in nicht-terrestrischen Netzwerken und Satellitennetzwerken trägt das Projekt SPENCER dazu bei, die technologische Unabhängigkeit im Bereich 6G-Netzwerke und -Dienste zu stärken.
-%Dies ist von entscheidender Bedeutung, um die Potenziale der Digitalisierung voll auszuschöpfen und Deutschlands und Europas Rollen in der globalen Technologieentwicklung zu festigen.
-%
-%Das Projekt hat zudem direkte Verbindungen zur Raumfahrt und zur Erforschung des Weltraums.
-%Es fokussiert auf die Integration von Edge"=Computing in Satellitennetzwerke, die den Zugang zu hochwertigen Daten aus dem Weltraum und die Bereitstellung von Diensten in entlegenen Regionen ermöglichen.
-%Dies unterstützt die Stärkung der Raumfahrt, die Erforschung des Weltraums und die nachhaltige Nutzung von Raumfahrttechnologien zur Verbesserung der Lebensqualität auf der Erde.
-%
-%SPENCER fördert darüber hinaus auch gesellschaftliche Resilienz, Vielfalt und Zusammenhalt, indem es darauf abzielt, Edge-Dienste in Regionen zu bringen, die aufgrund geografischer oder sozialer Gegebenheiten bisher nicht von terrestrischem Edge"=Computing profitieren konnten.
-%Durch die Bereitstellung dieser Dienste trägt SPENCER dazu bei, die `Digital Divide' zu überbrücken und die Resilienz von Gemeinschaften in abgelegenen oder benachteiligten Gebieten zu stärken.
-%Es unterstützt auch die Vielfalt, indem es digitale Möglichkeiten in Regionen erweitert, in denen sie zuvor begrenzt waren, und fördert den gesellschaftlichen Zusammenhalt, indem es gleichberechtigten Zugang zu digitalen Technologien gewährleistet.
+The project GEKO is closely aligned with the strategic goals of the BMFTR and the objectives of its \enquote{Hightech Agenda Deutschland}.
+In particular, it addresses two central themes emphasized in the funding policy: advancing artificial intelligence as a key enabling technology and promoting sustainable digital infrastructures in line with Germany's climate commitments.
+
+First, GEKO contributes to strengthening Germany's technological leadership in AI by addressing the high energy demand of inference workloads.
+The project develops innovative system-level mechanisms for energy-efficient orchestration of GPU resources in serverless environments.
+Consequently, it complements existing AI research that predominantly focuses on model efficiency and instead tackles the infrastructure and platform perspective, which are equally important for the practical use of AI technology.
+This is directly in line with the Hightech Agenda's objective to expand AI research across the full technology stack and secure digital sovereignty in Europe.
+Second, GEKO has a strong relation to the BMFTR's climate and sustainability goals.
+The project's central objective, i.e., reducing the carbon footprint of AI workloads in cloud platforms, directly supports Germany's contribution to achieving the climate targets of the Paris Agreement.
+By focusing on platform-level orchestration and resource sharing, GEKO demonstrates how sustainability can be built into digital infrastructures rather than being left to individual developers or applications.
+This systemic approach has the potential to deliver significant energy savings at scale, thereby making a measurable contribution to sustainable digitalization.
+
+Finally, the project strengthens education and innovation transfer.
+Embedded in the Software Campus program, GEKO provides graduate students with the opportunity to develop practical expertise in systems research, cloud platforms, and sustainable computing.
+In parallel, the project fosters leadership and soft skills that are crucial for future roles in academia and industry.
+The planned open-source prototype of a serverless GPU platform ensures that the results are not only of academic value but also accessible to the wider research community and industrial stakeholders, thereby accelerating innovation transfer and supporting Germany's role as a leading hub for sustainable AI.
+In this way, GEKO not only advances fundamental research but also facilitates direct knowledge transfer from academia to industry, ensuring that insights into sustainable AI infrastructures quickly translate into practical innovations in the German and European technology sector.
