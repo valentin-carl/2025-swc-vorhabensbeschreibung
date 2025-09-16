@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1757951553.31502 "main.aux" "main.bbl" "main" 1757951712.34992 0
+["bibtex main"] 1758032707.87077 "main.aux" "main.bbl" "main" 1758032930.91908 0
   "./bibliography.bib" 1757951550.90002 330591 c94a06096c8a6d31d22ddae60a288f2e ""
-  "./main-blx.bib" 1757951712.02438 345 8a5120ca7f33a0a0a4f9efb0b39d6d51 ""
+  "./main-blx.bib" 1758032930.59996 345 8a5120ca7f33a0a0a4f9efb0b39d6d51 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "main.aux" 1757951712.02026 15410 71bbdf7ce509699a43bca35c8ff41b40 "pdflatex"
+  "main.aux" 1758032930.59601 14851 a393610e3de0aa74c795baba627f3f02 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1757951710.36217 "/Users/valentin/3S/40-49 SWC/03 VHB/2025-swc-vhb-geko/main.tex" "main.pdf" "main" 1757951712.35008 0
-  "/Users/valentin/3S/40-49 SWC/03 VHB/2025-swc-vhb-geko/main.tex" 1757762875.3784 7142 a5c301f791d31b5401c24f3700fd628b ""
+["pdflatex"] 1758032929.06285 "/Users/valentin/3S/40-49 SWC/03 VHB/2025-swc-vhb-geko/main.tex" "main.pdf" "main" 1758032930.91929 0
+  "/Users/valentin/3S/40-49 SWC/03 VHB/2025-swc-vhb-geko/main.tex" 1758018689.70389 7191 0bd1d1e33e3553f2ba5458c46c4f0548 ""
   "/Users/valentin/Library/texlive/2024/texmf-var/fonts/tfm/public/sauter/cmssbx12.tfm" 1757603449.86438 1208 352255972caa6bdda046e6c72b68820f ""
   "/Users/valentin/Library/texlive/2024/texmf-var/fonts/tfm/public/sauter/cmssbx17.tfm" 1757603447.30898 1208 90620db3f89da34c879d1b97b4e33e57 ""
   "/Users/valentin/Library/texlive/2024/texmf-var/fonts/tfm/public/sauter/cmssbx8.tfm" 1757603453.0387 1208 6ab0f0c55975cfde644cddb2115c7f4d ""
@@ -253,15 +253,15 @@
   "graphs/middleware2024neu.png" 1757602469.75516 210745 ec677e6433d4c442104a3d7f7ae901ca ""
   "graphs/swc.png" 1757602469.76257 103171 a439321d4407cec83e2d90dfd2990a8f ""
   "graphs/tuberlin.pdf" 1757602469.7627 22907 bd7c2c29aa63ace349d9fbccda4aefe8 ""
-  "main.aux" 1757951712.02026 15410 71bbdf7ce509699a43bca35c8ff41b40 "pdflatex"
-  "main.bbl" 1757951553.43498 36543 2de5f7f3ae2ce527e30a2b545e564f79 "bibtex main"
-  "main.out" 1757951712.02182 5687 830ffe2a145f6475367a85c1efae0d70 "pdflatex"
-  "main.run.xml" 1757951712.02493 2566 45db272a79b4ecc843dff83dbdf82f79 "pdflatex"
-  "main.tex" 1757762875.3784 7142 a5c301f791d31b5401c24f3700fd628b ""
-  "main.toc" 1757951712.02498 2918 fdb45bd38f9110d7db49df0a5cf1b8b9 "pdflatex"
+  "main.aux" 1758032930.59601 14851 a393610e3de0aa74c795baba627f3f02 "pdflatex"
+  "main.bbl" 1758032707.97419 31398 2cbb2b4e3abd1e2782091f2148d37bba "bibtex main"
+  "main.out" 1758032930.59757 5687 830ffe2a145f6475367a85c1efae0d70 "pdflatex"
+  "main.run.xml" 1758032930.60047 2566 45db272a79b4ecc843dff83dbdf82f79 "pdflatex"
+  "main.tex" 1758018689.70389 7191 0bd1d1e33e3553f2ba5458c46c4f0548 ""
+  "main.toc" 1758032930.60052 2918 fdb45bd38f9110d7db49df0a5cf1b8b9 "pdflatex"
   "sections/1_intro.tex" 1757947562.12093 12906 c39e161efb39f134a0eaac56d94116d4 ""
-  "sections/2_standWiss.tex" 1757951710.12576 8286 640643af858506616201605089c34d1a ""
-  "sections/3_partner.tex" 1757606692.09908 4754 9384c53fa570a8e19b079121158404b1 ""
+  "sections/2_standWiss.tex" 1758018605.32715 8293 8825196351588ead140583435aaf8f52 ""
+  "sections/3_partner.tex" 1758032928.56285 5098 d430ae643796e8db8e8a66a823a68328 ""
   "sections/4.3_finanzen.tex" 1757607027.97545 12857 62904f2af1cbf090b050b0cbab575727 ""
   "sections/4_arbeitsplan.tex" 1757606983.81459 10638 6a8c4d9251c1277dcc302809541606c2 ""
   "sections/5_verwertungsplan.tex" 1757607113.76574 4601 c5db81da86b6b94f6b45243a81671a3a ""

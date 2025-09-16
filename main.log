@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.3)  15 SEP 2025 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.3)  16 SEP 2025 16:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1408,36 +1408,36 @@ Package: xparse 2024-02-18 L3 Experimental document command parser
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 153.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 154.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 153.
-LaTeX Font Info:    Trying to load font information for OT1+xcmss on input line 153.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 154.
+LaTeX Font Info:    Trying to load font information for OT1+xcmss on input line 154.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/sansmathfonts/ot1xcmss.fd
 File: ot1xcmss.fd 2021/06/22
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-Package hyperref Info: Link coloring ON on input line 153.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+Package hyperref Info: Link coloring ON on input line 154.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1468,7 +1468,7 @@ Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 153.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 154.
 \c@lstlisting=\count511
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1486,35 +1486,35 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 153.
-Package biblatex Info: Reference segment=0 on input line 153.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 181.
+Package biblatex Info: Reference section=0 on input line 154.
+Package biblatex Info: Reference segment=0 on input line 154.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 182.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 181.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 182.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <./graphs/swc.png, id=118, 765.86125pt x 883.3pt>
 File: ./graphs/swc.png Graphic file (type png)
 <use ./graphs/swc.png>
-Package pdftex.def Info: ./graphs/swc.png  used on input line 226.
+Package pdftex.def Info: ./graphs/swc.png  used on input line 227.
 (pdftex.def)             Requested size: 36.99814pt x 42.67912pt.
 <./graphs/huawei.png, id=120, 2334.7225pt x 525.965pt>
 File: ./graphs/huawei.png Graphic file (type png)
 <use ./graphs/huawei.png>
-Package pdftex.def Info: ./graphs/huawei.png  used on input line 227.
+Package pdftex.def Info: ./graphs/huawei.png  used on input line 228.
 (pdftex.def)             Requested size: 101.03235pt x 22.76228pt.
 <./graphs/3s-default-transparent.pdf, id=121, 229.85875pt x 216.81pt>
 File: ./graphs/3s-default-transparent.pdf Graphic file (type pdf)
 <use ./graphs/3s-default-transparent.pdf>
-Package pdftex.def Info: ./graphs/3s-default-transparent.pdf  used on input line 228.
+Package pdftex.def Info: ./graphs/3s-default-transparent.pdf  used on input line 229.
 (pdftex.def)             Requested size: 45.2449pt x 42.67912pt.
 <./graphs/tuberlin.pdf, id=122, 178.6675pt x 61.22874pt>
 File: ./graphs/tuberlin.pdf Graphic file (type pdf)
 <use ./graphs/tuberlin.pdf>
-Package pdftex.def Info: ./graphs/tuberlin.pdf  used on input line 229.
+Package pdftex.def Info: ./graphs/tuberlin.pdf  used on input line 230.
 (pdftex.def)             Requested size: 107.9374pt x 36.98866pt.
  [1
 
@@ -1529,26 +1529,16 @@ Package pdftex.def Info: ./graphs/tuberlin.pdf  used on input line 229.
 ] [4]) (./sections/2_standWiss.tex [5]) (./sections/3_partner.tex [6
 
 ]
-LaTeX Font Info:    Font shape `OT1/xcmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/xcmss/m/sl' tried instead on input line 19.
+LaTeX Font Info:    Faking \texteuro for font family xcmss
+(Font)              in TS1 encoding on input line 27.
+ [7
 
-Overfull \hbox (42.76259pt too wide) in paragraph at lines 28--30
-\OT1/xcmss/m/n/10.95 Lab hat bere-its sig-nifikante Ex-per-tise in den Projekt-Kernforschungsbereichen Server-less"=Computing [[][]Elz+22[][]],
- []
-
-
-Overfull \hbox (34.33716pt too wide) in paragraph at lines 28--30
-\OT1/xcmss/m/n/10.95 Edge- und In-Network-Computing [[][]Bra+22[][]] und nicht-terrestrischen und LEO-Satellitennetzwerken [[][]Cau+22[][]]. 
- []
-
-) (./sections/4_arbeitsplan.tex [7
-
-] [8]
+]) (./sections/4_arbeitsplan.tex [8]
 Overfull \hbox (18.15544pt too wide) in paragraph at lines 8--9
 \OT1/xcmss/m/n/10.95 Im Fol-gen-den wer-den die ge-planten Ar-beitspakete und Meilen-steine (Sec-tion [][]4.1[][]), Zeit- und Ressourcenpla-
  []
 
-<./graphs/gantt.pdf, id=259, 719.68875pt x 319.1925pt>
+<./graphs/gantt.pdf, id=252, 719.68875pt x 319.1925pt>
 File: ./graphs/gantt.pdf Graphic file (type pdf)
 <use ./graphs/gantt.pdf>
 Package pdftex.def Info: ./graphs/gantt.pdf  used on input line 15.
@@ -1818,6 +1808,8 @@ LaTeX Font Info:    Faking \texteuro for font family xcmss
 (Font)              in TS1 encoding on input line 67.
 LaTeX Font Info:    Faking \texteuro for font family xcmss
 (Font)              in TS1 encoding on input line 67.
+LaTeX Font Info:    Font shape `OT1/xcmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/xcmss/m/sl' tried instead on input line 83.
 
 Overfull \hbox (2.01953pt too wide) in paragraph at lines 79--86
 \OT1/xcmss/m/n/10.95 angef^^?uhrten An- und Abreiseaus-gaben basieren auf ak-tuellen Ange-boten, die in ap-pendix [][]A.1[][] aufgef^^?uhrt
@@ -1833,7 +1825,7 @@ Overfull \hbox (17.87152pt too wide) in paragraph at lines 92--96
 ] [17
 
 ]) (./sections/7_anhang.tex [18]
-<./graphs/ic2e2024.png, id=382, 1319.93124pt x 1110.1475pt>
+<./graphs/ic2e2024.png, id=371, 1319.93124pt x 1110.1475pt>
 File: ./graphs/ic2e2024.png Graphic file (type png)
 <use ./graphs/ic2e2024.png>
 Package pdftex.def Info: ./graphs/ic2e2024.png  used on input line 30.
@@ -1841,7 +1833,7 @@ Package pdftex.def Info: ./graphs/ic2e2024.png  used on input line 30.
  [19
 
  <./graphs/ic2e2024.png>]
-<./graphs/middleware2024neu.png, id=390, 1333.98375pt x 1040.88875pt>
+<./graphs/middleware2024neu.png, id=379, 1333.98375pt x 1040.88875pt>
 File: ./graphs/middleware2024neu.png Graphic file (type png)
 <use ./graphs/middleware2024neu.png>
 Package pdftex.def Info: ./graphs/middleware2024neu.png  used on input line 43.
@@ -1860,18 +1852,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40744 strings out of 474116
- 837642 string characters out of 5743683
+ 40728 strings out of 474116
+ 837120 string characters out of 5743683
  1976187 words of memory out of 5000000
- 62424 multiletter control sequences out of 15000+600000
+ 62411 multiletter control sequences out of 15000+600000
  566552 words of font info for 67 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 117i,16n,121p,1906b,2147s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,16n,121p,1906b,2074s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/sansmathfonts/cmssbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/sansmathfonts/cmssbx17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/sansmathfonts/cmssbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/sansmathfonts/cmsscsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (20 pages, 777125 bytes).
+Output written on main.pdf (20 pages, 773722 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 391 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
+ 469 PDF objects out of 1000 (max. 8388607)
+ 380 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
  264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

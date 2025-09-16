@@ -466,7 +466,7 @@ INPUT sections/2_standWiss.tex
 INPUT ./sections/3_partner.tex
 INPUT ./sections/3_partner.tex
 INPUT sections/3_partner.tex
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT ./sections/4_arbeitsplan.tex
 INPUT ./sections/4_arbeitsplan.tex
 INPUT sections/4_arbeitsplan.tex
@@ -484,11 +484,11 @@ INPUT sections/4.3_finanzen.tex
 INPUT ./tables/finanzen.tex
 INPUT ./tables/finanzen.tex
 INPUT tables/finanzen.tex
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /Users/valentin/Library/texlive/2024/texmf-var/fonts/tfm/public/sauter/cmssbx8.tfm
 INPUT ./tables/reisen.tex
 INPUT ./tables/reisen.tex
 INPUT tables/reisen.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT ./sections/5_verwertungsplan.tex
 INPUT ./sections/5_verwertungsplan.tex
 INPUT sections/5_verwertungsplan.tex
