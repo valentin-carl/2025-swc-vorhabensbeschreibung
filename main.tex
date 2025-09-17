@@ -8,8 +8,28 @@
     filecolor=blue
 ]{hyperref}
 
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+
 \newcommand{\TU}{Technische Universität Berlin}
 %\usepackage[a4paper,showframe]{geometry}
+
+\newcommand{\tabelle}[3]{
+\begin{center}
+    \begin{tabularx}{0.4\textwidth}{X X}
+        \toprule
+        \textbf{duration} & #1 months \\
+        \midrule
+        \textbf{timeline} & #2 \\
+        \midrule
+        \textbf{resources} & #3 PM \\
+        \bottomrule
+    \end{tabularx}
+\end{center}
+}
 
 \usepackage[notmath]{sansmathfonts}
 \renewcommand{\familydefault}{\sfdefault}
@@ -216,7 +236,7 @@
         \textbf{\begin{tabular}[c]{@{}l@{}}Project start\\ Project duration\end{tabular}} &
         \begin{tabular}[c]{@{}l@{}}
             \needcheck{March 1, 2026} \\
-            \needcheck{12 Months}
+            24 Months
         \end{tabular}                                                                       \\ \hline
     \end{tabular}
 \end{center}
@@ -240,7 +260,6 @@
 \input{sections/2_standWiss.tex}
 \input{sections/3_partner.tex}
 \input{sections/4_arbeitsplan.tex}
-\input{sections/4.3_finanzen.tex}
 \input{sections/5_verwertungsplan.tex}
 \input{sections/6_literatur.tex}
 

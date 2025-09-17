@@ -1,100 +1,147 @@
 \clearpage
 \section{Detailed Description of the Work Plan}
 
-% AP mit Arbeitsumfängen Darstellung Voraussetzungen, Lösungswegen, Entscheidungspunkten, Umgang mit möglichen Risiken
-% In jedem Fall zu betrachten: Wie wird der Problemlösungsraum eingeschränkt? Woran wird der Projekterfolg gemessen? Risikomanagement (wissenschaftlich/technisch)
-% Bei ergebnisoffenem Prozess: klare Definition der Arbeitspakete und Ziele, Wie wird das Projektergebnis definiert? Wie kommt es zu Entscheidungspunkten?
+This section contains detailled descriptions of the project's work packages (WPs) and milestones (\cref{subsec:wp}), time and ressource planning (\cref{subsec:time}), and financial plans (\cref{subsec:finances}).
 
-Im Folgenden werden die geplanten Arbeitspakete und Meilensteine (\Cref{subsec:ap}), Zeit- und Ressourcenplanung (\Cref{subsec:zeitplan}) und Finanzplanung (\Cref{sec:finanz}) im Detail beschrieben.
+\subsection{Work packages and milestones}\label{subsec:wp}
 
-\subsection{Work packages and milestones}
-\label{subsec:ap}
+The project comprises four following work packages: analysis and design (WP 1), prototype development (WP 2), prototype evaluation (WP 3), and reporting and publishing (WP 4).
+Figure~\ref{fig:gantt} contains a timeline and overview of the entire project duration.
+In addition, each WP description contains detailled information on its duration and required person-months (PM).
+The work packages partly overlap to ensure smooth transitions between project stages.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{./graphs/gantt.pdf}
-    \caption{Zeitplan des Projekts SPENCER.}
+\subsubsection{WP 1 -- analysis and design}
+\tabelle{6}{03/26 -- 09/26}{\needcheck{X}}
+
+During the analysis and conception phase, the focus is on a comprehensive review of current publications, patents, and research reports, with particular emphasis on energy-efficient function execution, GPU orchestration strategies, and sustainable serverless platform design.
+This systematic review is intended to yield sound findings that will serve as the basis for the further development of the project.
+
+Close cooperation with the industry partner makes it possible to define the scope, fundamentals, and quality dimensions of the project.
+Both functional and non-functional requriements are identified and recorded in a precise catalog, which includes not only technical aspects but also sustainability metrics such as energy efficiency and carbon impact.
+This catalog serves as a guideline for the subsequent development and evaluation phases of the project.
+
+Particular attention is paid to applications that can benefit from energy-efficient serverless computing and GPU-accelerated AI inference.
+Identifying and considering these fields of application helps anticipate future demands on serverless platforms and ensures that the developed concepts and prototypes address both scalability and sustainability requirements in practice.
+The results of this analysis directly inform the architecture of the open-source prototype to be developed in WP 2.
+
+\subsubsection{WP 2 -- prototype development}
+\tabelle{14}{09/26 -- 11/27}{\needcheck{X}}
+
+During the prototype development phase, the work is structured into three main parts: system design (WP 2.A), prototype implementation (WP 2.B), and the development of exemplary applications (WP 2.C).
+Together, these activities ensure that the conceptual requirements defined in WP 1 are translated into a working open-source prototype that demonstrates the practical feasibility and impact of the project.
+
+\emph{System design (WP 2.A).}
+The first step is a detailed technical design of the system architecture.
+Building on the catalog of requirements from WP 1, this design phase translates functional and non-functional objectives into a concrete architectural design, from which we later develop a software blueprint.
+Particular emphasis is placed on mechanisms for adaptive GPU orchestration, efficient function isolation, and energy-aware scheduling.
+The design process follows an iterative approach, where early prototypes are continuously validated against the requirements to ensure that every requirement is directly tied to measurable evaluation criteria such as energy efficiency, elasticity, and performance.
+%Early design validation through lightweight prototyping and simulation will provide feedback loops that help refine the architecture before full implementation begins.
+
+\emph{Prototype implementation (WP 2.B).}
+%Based on the finalized design, the open-source prototype is implemented in iterative development cycles.
+%The prototype builds upon established open-source technologies but is extended with novel components for sustainable serverless execution, especially so for platform components related to resource scheduling and the control plane.
+%Two main subsystems form the backbone of the prototype: (1) a serverless runtime capable of managing GPU-accelerated inference tasks with minimal energy overhead, including fine-grained scaling and resource-sharing mechanisms; and (2) an orchestration layer that dynamically adapts resource allocation based on workload characteristics and sustainability metrics.
+%Continuous integration and testing pipelines are established to ensure that the prototype converges toward a stable and reproducible system.
+%The successful completion of this implementation marks a key project milestone.
+Based on the finalized design, the open-source prototype is implemented in iterative development cycles.
+The prototype builds upon established open-source technologies but introduces novel components for sustainable serverless execution, with a particular focus on GPU management and energy-aware orchestration.
+Four main subsystems form the backbone of the prototype: (1) a modular serverless runtime that supports multiple programming languages and provides custom GPU abstractions through dedicated libraries; (2) a platform layer capable of handling GPU-intensive workloads and orchestrating them for maximum energy efficiency; (3) mechanisms for software- and hardware-level isolation, enabling systematic comparisons of the effects of different design choices on performance and energy trade-offs; and (4) a modular architecture that allows individual components to be swapped and extended.
+Continuous integration and testing pipelines are established to guarantee that the prototype converges toward a stable, reproducible, and extensible system.
+
+\emph{Exemplary applications (WP 2.C).}
+To demonstrate the applicability and evaluate the practicality of the developed system, a set of exemplary applications is implemented.
+These applications are drawn from domains where serverless AI inference has high relevance, such as computer vision workloads or natural language processing services.
+Each application will later serve as a benchmark scenario to validate whether the platform fulfills the functional and non-functional requirements specified earlier.
+By running these applications in controlled experiments, we can systematically assess the platform's energy efficiency, scalability, and other metrics under realistic workloads.
+In addition, these applications provide reference use cases for the wider community.
+
+%\needcheck{The successful implementation of WP 2 not only results in a functional prototype but also lays the foundation for the comprehensive evaluation activities carried out in WP 3.
+%In this way, WP 2 acts as the pivotal bridge between conceptual design and empirical validation.}
+
+\subsubsection{WP 3 -- empirical evaluation}
+\tabelle{12}{01/27 -- 01/28}{\needcheck{X}}
+
+The empirical evaluation phase focuses on assessing the prototype developed in WP 2 against the functional and non-functional requirements defined in WP 1.
+Evaluation activities are conducted iteratively throughout the development process to account for different stages of the prototype and provide continuous feedback for refinement.
+The evaluation framework includes benchmarks that primarily target metrics of energy efficiency, such as GPU utilization, power consumption, and approximations overall carbon impact.
+In addition, performance metrics such as latency, throughput, and scalability are measured to ensure that the system meets the expected service levels.
+
+WP 3 also systematically compares different strategies for hardware orchestration, resource management, and isolation mechanisms at both the software and hardware levels.
+This enables identification of trade-offs between energy efficiency, performance, and system overhead.
+By running controlled experiments with representative AI inference workloads, the evaluation phase verifies whether the platform achieves its goals of sustainable and scalable serverless execution.
+The results of WP 3 not only provide quantitative evidence of the effectiveness of the developed system but also guide potential adjustments to the prototype and inform best practices for energy-efficient serverless platform design.
+
+\subsubsection{WP 4 -- publishing and reporting}
+\tabelle{16}{11/26 -- 03/28}{\needcheck{X}}
+
+In the final work package, we focus on two main activities.
+First, the developed software artifacts will be released as open source.
+This ensures that other researchers, developers, and organizations can benefit from the findings and the sustainable serverless platform developed within the GEKO project.
+The open-source release provides full access to the source code, documentation, and relevant resources, promoting transparency, reproducibility, and enabling further development and innovation within the broader community.
+Preparing the software for release involves ensuring high code quality, comprehensive documentation, and proper formatting, and runs continuously alongside the ongoing development and extension of the prototype.
+
+In the final months of the project, a comprehensive project report will be produced.
+This report documents the entire project lifecycle, providing detailed insights into the analysis, development, and evaluation phases.
+It offers a thorough assessment of the milestones achieved, discusses challenges encountered and the approaches taken to resolve them, and provides recommendations for potential future extensions of the platform.
+The report compiles technical details, methodological approaches, results, and conclusions to give a holistic overview of the project outcomes and their significance for sustainable serverless AI computing.
+
+\emph{Milestones.}
+At the end of each work package, a clearly defined milestone marks the completion of the corresponding project phase. 
+Together, these milestones provide measurable checkpoints to ensure that the project progresses according to plan and achieves its objectives.
+\begin{itemize}
+    \item[\textbf{M1}] WP 1 concludes with a written and elaborated catalog of requirements that serves as the foundation for all subsequent development.
+    \item[\textbf{M2}] WP 2 is finalized with a working open-source prototype, demonstrating the feasibility of sustainable serverless GPU orchestration.
+    \item[\textbf{M3}] WP 3 culminates in a set of realistic use cases and benchmarks that enable systematic comparison of different serverless platforms, in general, and orchestration and isolation strategies, in particular.
+    \item[\textbf{M4}] Finally, WP 4 delivers a comprehensive project report documenting the entire project lifecycle, including technical results, evaluation findings, and recommendations for future work. 
+\end{itemize}
+
+\subsection{Time and ressource planning}\label{subsec:time}
+\needcheck{\emph{TODO}}
+
+\subsection{Financial plan and preliminary calculations}\label{subsec:finances}
+\needcheck{\emph{TODO}}
+
+\begin{landscape}
+    \thispagestyle{empty}
+    \begin{figure}
+        %\centering
+        \hspace{-4em}
+        \begin{ganttchart}[
+            hgrid,
+            vgrid,
+            x unit=0.75cm,
+            y unit title=0.75cm,
+            y unit chart=0.75cm,
+            bar label node/.append style={align=left, text width=7.5cm, font=\itshape},
+            group label node/.append style={align=left, text width=8cm},
+        ]{1}{24}
+
+            \gantttitle{2026}{10}\gantttitle{2027}{12}\gantttitle{2028}{2} \\
+            \gantttitlelist{3,...,12}{1}\gantttitlelist{1,...,12}{1}\gantttitlelist{1,...,2}{1} \\
+
+            \ganttgroup{WP 1 -- Analysis and design}{1}{6} \\
+            \ganttbar{Review of research materials}{1}{4} \\
+            \ganttbar{Specification of requirements}{2}{5} \\
+            \ganttbar{Exploration of possible applications}{4}{6} \\
+            \ganttmilestone{M1}{6}\\
+
+            \ganttgroup{WP 2 -- Prototype development}{7}{20} \\
+            \ganttbar{System design}{7}{9} \\
+            \ganttbar{Prototype implementation}{8}{20} \\
+            \ganttbar{Implementation of exemplary applications}{16}{20} \\
+            \ganttmilestone{M2}{20}\\
+
+            \ganttgroup{WP 3 -- Empirical evaluation}{11}{22} \\
+            \ganttbar{Development of evaluation methods}{11}{20} \\
+            \ganttbar{Experiments and benchmarks}{14}{22} \\
+            \ganttmilestone{M3}{22}\\
+
+            \ganttgroup{WP 4 -- Publishing and reporting}{9}{24} \\
+            \ganttbar{Open-source publication}{9}{22}\\
+            \ganttbar{Project report}{20}{24}\\
+            \ganttmilestone{M4}{24}
+        \end{ganttchart}
+    \caption{Timeline of the GEKO project.}
+    \end{figure}
     \label{fig:gantt}
-\end{figure}
-
-Das Projekt SPENCER ist in die drei Phasen `Analyse und Konzeption', `Entwicklung und Evaluierung' und `Ergebnisdissemination und Berichterstattung' unterteilt.
-Der Zeitplan der Arbeitspaketbearbeitung findet sich in \cref{fig:gantt}.
-
-\subsubsection{AP1: ...}
-\label{subsec:ap:1}
-
-In der Analyse- und Konzeptionsphase liegt der Fokus auf einer umfassenden Untersuchung aktueller Publikationen wie Studien, Patente und Forschungsberichte sowie der Analyse technologischer Entwicklungen und wirtschaftlicher Rahmenbedingungen (Punkt 1.A).
-Durch diese systematische Sichtung sollen fundierte Erkenntnisse gewonnen werden, die als Grundlage für die weitere Ausarbeitung des Projekts dienen.
-
-Die enge Zusammenarbeit mit dem Industriepartner ermöglicht es, den Rahmen, die Grundlagen und die Qualitätsdimensionen des Projekts zu definieren.
-Hierbei werden sowohl funktionale als auch nicht-funktionale Ziele identifiziert und in einem präzisen Anforderungskatalog festgehalten (Punkt 1.B).
-Dieser Katalog dient als Leitfaden für die nachfolgenden Entwicklungs- und Evaluierungsphasen des Projekts.
-
-Ein besonderes Augenmerk liegt dabei auf möglichen Anwendungen aus Domänen, die von Edge-Computing profitieren können (Punkt 1.C).
-Die Identifikation und Betrachtung dieser Anwendungsfelder für die Bereitstellung global verteilter Software trägt dazu bei, zukünftige Entwicklungen und Chancen im Bereich des Edge-Computing zu antizipieren.
-
-Als entscheidenden Meilenstein des ersten Arbeitspakets ist geplant, am Ende eine umfassende Grundlagenstudie zum Ist-Zustand vorzulegen (Meilenstein M1).
-Diese Studie wird nicht nur einen detaillierten Anforderungskatalog umfassen, sondern auch eine tiefgehende Analyse aktueller Grundlagen und Entwicklungen im Bereich des global verteilten Edge-Computing bieten.
-Die Ausarbeitung wird zudem eine präzise Auswahl von exemplarischen Anwendungsfeldern einschließen.
-
-Die Grundlagenstudie wird als ein strategisches Dokument fungieren, das nicht nur den aktuellen Stand des Wissens und der Anforderungen widerspiegelt, sondern auch als Leitfaden für die nächsten Phasen des Projekts dient.
-Durch die klare Definition von Rahmen, Qualitätsdimensionen und konkreten Zielen legt die Studie den Grundstein für eine effektive und zielgerichtete Umsetzung des Projekts.
-Ihr Abschluss markiert somit nicht nur das Ende der Analyse- und Konzeptionsphase, sondern gleichzeitig den Startpunkt für die aufbauenden Schritte in der Entwicklungs- und Evaluierungsphase.
-
-\subsubsection{AP2: ...}
-\label{subsec:ap:2}
-
-In der Phase der "Entwicklung und Evaluierung" erfolgt zunächst die gezielte Auswahl von drei Softwareanwendungen, innerhalb derer die Erfüllung der zuvor definierten Anforderungen aus Anwendungsperspektive intensiv untersucht werden kann.
-Dies unterliegt dem Ansatz eines Test-Driven-Development-Prozess, der sicherstellt, dass die im Anforderungskatalog festgelegten Anforderungen systematisch in Evaluierungsmethoden umgesetzt werden, die während des Entwicklungsprozesses kontinuierlich Anwendung finden.
-Hierzu gehören beispielsweise Tests für funktionale Aspekte sowie Performance-Benchmarks für nicht-funktionale Anforderungen (Punkt 2.A).
-Die entwickelteten wiederverwendbaren Evaluationsmethodiken und -Umgebungen stellen somit den zweiten Meilenstein des Projekts dar (Meilenstein M2).
-Sie bilden nicht nur die Grundlage für die darauf folgende Implementierung und Integration, sondern ermöglichen auch eine fundierte Evaluation und potenzielle Anpassung der entwickelten Lösung im Hinblick auf die ursprünglichen Anforderungen.
-
-Durch eine kontinuierliche und strenge Anwendung dieser Evaluierungsmethoden an Prototypen wird so anschließend agil eine Serverless Edge-Computing Plattform entwickelt.
-Diese Prototypenentwicklung orientiert sich an bestehenden Open-Source Software-Plattformen, die iterativ weiterentwickelt werden, um schließlich in einem finalen Software-Prototypen zu konvergieren (Punkt 2.B).
-Die Entwicklung dieses Software-Prototypen umfasst die Entwicklung zweier Hauptkomponenten:
-Erstens wird eine Serverless-Laufzeitumgebung entwickelt, die verschiedene Anwendungsdienste parallel aber isoliert auf begrenzten Resourcen ausführen kann und in der Lage ist, Resourcen schnell zwischen Diensten auszutauschen um Elastizität sicherzustellen.
-Zweitens wird parallel aber in enger Absprache ein Subsystem zur Migration von Anwendungsdienstinstanzen und Dienstzustandsdaten entwickelt, um einen Transfer von Diensten entgegen der Mobilität der unterliegenden Satelliten-Infrastruktur zu gewährleisten.
-Der Software-Prototyp, der die definierten Anforderungen erfüllt, stellt damit den dritten Meilenstein des Projekts dar (Meilenstein M3).
-
-Die erfolgreiche Umsetzung dieses Entwicklungsprozesses erfordert zudem die Erstellung einer detaillierten technischen Dokumentation (Punkt 2.C).
-Diese Dokumentation bildet nicht nur die Grundlage für die interne Weiterentwicklung der Plattform, sondern stellt auch sicher, dass das erarbeitete Wissen und die Funktionsweise der entwickelten Software auch über das Ende des Projekts hinaus transparent und nachvollziehbar sind.
-
-\subsubsection{AP3: ...}
-\label{subsec:ap:3}
-
-In der Phase der "Ergebnisdissemination und Berichterstattung" stehen zwei entscheidende Aktivitäten im Mittelpunkt:
-Zum einen erfolgt die Open-Source Veröffentlichung der entwickelten Softwarelösung (Punkt 3.A).
-Dies ermöglicht anderen Fachleuten und Organisationen, von den erzielten Erkenntnissen und der entwickelten Serverless Edge-Computing Plattform zu profitieren.
-Die Open-Source Veröffentlichung gewährleistet einen offenen Zugang zu Quellcode, Dokumentation und relevanten Ressourcen, was nicht nur die Nachvollziehbarkeit und Überprüfbarkeit der Ergebnisse fördert, sondern auch eine Grundlage für zukünftige Weiterentwicklungen und Innovationen in der breiteren Gemeinschaft schafft.
-Für diese Veröffentlichung ist es notwendig, die Code-Qualität der bestehenden Prototypen sicherzustellen und die Dokumentation der Software entsprechend zu formatieren.
-Dieser Prozess läuft kontinuierlich zur weiteren Entwicklung und Erweiterung der Software-Prototypen.
-
-Im letzten Quartal des Projekts wird ein Projektbericht erarbeitet, der den gesamten Projektablauf detailliert dokumentiert und Einblick in die Analyse-, Entwicklungs- und Evaluierungsphasen gibt (Punkt 3.B).
-Der Bericht soll eine umfassende Bewertung der erreichten Meilensteine bieten, Herausforderungen bei der Umsetzung des Projekts und deren Lösungsansätze analysieren und Empfehlungen für mögliche Weiterentwicklungen geben.
-Die Verfassung dieses Berichts erfordert eine präzise Zusammenstellung von technischen Details, methodischen Ansätzen, Ergebnissen und Schlussfolgerungen, um einen ganzheitlichen Einblick in die Projektergebnisse zu gewähren.
-
-
-\subsection{Time and ressource plan}
-\label{subsec:zeitplan}
-
-% Meilensteine, typischerweise 3 bis 4, als klar definierte und überprüfbare Teilergebnisse im Projektverlauf, inhaltlich und zeitlich definieren: z.B.: `Konzept ist erstellt', `Prototyp vorhanden'
-% kreuztabelle Personenmonate (PM) (Unter-)Arbeitspakete vs. Personalkategorie, die Arbeitspaketbeschreibungen müssen den Personalbedarf widerspiegeln!
-
-\input{tables/menschen.tex}
-
-Mit der inhaltlichen Bearbeitung des Projekts SPENCER sollen sieben studentische Hilfskräfte von je 80 Monatsstunden (entspricht 6 Personenmonate pro Person pro Jahr oder 2 Zeitmonate pro Personenmonat) betraut werden (genauere Finanzplanung in \cref{sec:finanz:personal}).
-Die Zuordnung von Personenmonaten zu Arbeitspaketen findet sich in \cref{tab:menschen}.
-Neben der Projektleitung, die jeweils die Anleitung der Arbeitspakete und Mitarbeitenden übernimmt, werden fünf studentische Hilfskräfte vordergründig mit der inhaltlichen Bearbeitung des Arbeitspakets AP2 betraut, während zwei weitere studentische Hilfskräfte teilweise auch die Umsetzung von Arbeitspaket AP3 übernehmen.
-Alle studentischen Hilfskräfte sind in allen Arbeitspaketen involviert, um den wissenschaftlichen Erfolg des Projekts zu sichern:
-Jede studentische Hilfskraft soll also sowohl an Konzeption (AP1), Entwicklung (AP2) und Ergebnisdissemination (AP3) beteiligt sein.
-
-Alle studentischen Hilfskräfte erbringen je einen Personenmonat zu Arbeitspaket AP1, das so in Summe acht Personenmonate verlangt.
-Fünf studentische Hilfskräfte erbringen je 4,5 Personenmonate zu Arbeitspaket AP2 und sind damit vordergründig mit der Entwicklung, Evaluierung und Dokumentation des Software-Prototypen beschäftigt.
-Zwei weitere studentische Hilfskräfte erbringen einen reduzierten Umfang von drei Personenmonaten zur Umsetzung des Arbeitspakets AP2.
-Indes erbringen diese zwei studentischen Hilfskräfte eine erhöhte Anzahl von je zwei Personenmonaten zu Arbeitspaket AP3 und sind so auch für die Open-Source-Veröffentlichung des Software-Prototypen verantwortlich.
-Die übrigen fünf studentischen Hilfskräft erbringen für dieses Arbeitspaket AP3 jeweils 0,5 Personenmonate, die vordergründig in das Erarbeiten des Projektberichts fließen, an denen alle Mitarbeitenden beteiligt sein sollen.
-
-Im Übrigen entfallen mit Planungs-, Koordinierungs- und Leitungsaufgaben je ein Personenmonat für Arbeitspakete AP1 und AP2 auf die Projektleitung.
-Da Arbeistpaket AP3 zusätzliche Planung und Koordinierung erfordert, werden hierfür zwei Personenmonate der Projektleitung kalkuliert.
-Es ergeben sich so in Summe acht Personenmonate für die Bearbeitung des Arbeitspakets AP1, 29,5 Personenmonate für die Bearbeitung des Arbeitspakets AP2 und 8,5 Personenmonate für die Bearbeitung des Arbeitspakets AP3.
+\end{landscape}

@@ -64,16 +64,16 @@ Current FaaS deployments follow two dominant paths.
 On the one hand, organizations operate open-source serverless platforms on top of Kubernetes or similar orchestration systems. 
 While this approach offers flexibility, it suffers from heavy reliance on virtualization and container isolation, which introduces substantial overheads; these, in turn, increase per-request energy consumption between 15$\times$ and 30$\times$, depending on the virtualization technique used~\cite{sharma_challenges_2023}.
 Recent studies show that software-based isolation layers such as gVisor can significantly degrade efficiency, limiting the potential for sustainable operation~\cite{young_true_nodate}. 
-On the other hand, large public cloud providers offer commercial FaaS services, which remain largely opaque to researchers and offer only limited resource control (\needcheck{EXAMPLES}). 
+On the other hand, large public cloud providers offer commercial FaaS services, which remain largely opaque to researchers and offer only limited resource control.%(\needcheck{EXAMPLES}). 
 In particular, GPU support is mostly absent from these platforms, making it difficult to realize AI workloads in a serverless fashion.
 Despite these limitations, the research community has begun to address sustainability in serverless computing. 
 Early work has explored quantifying the energy overheads of function isolation and assigning carbon intensity metrics to individual function invocations~\cite{sharma_accountable_2024}.
-Other studies have examined spatio-temporal scheduling, where functions are steered to data centers with lower grid carbon intensity (\needcheck{EXAMPLES, viele}). 
+Other studies have examined spatio-temporal scheduling, where functions are steered to data centers with lower grid carbon intensity. %(\needcheck{EXAMPLES, viele}). 
 However, these approaches often conflict with the latency requirements of serverless workloads and cannot fully exploit hardware-level optimizations~\cite{sukprasert_limitations_2024}. 
-The majority of existing work still focuses on performance-oriented goals, such as reducing cold start latencies, rather than systematically reducing the energy footprint of the platform (\needcheck{EXAMPLES, viele}).
+The majority of existing work still focuses on performance-oriented goals, such as reducing cold start latencies, rather than systematically reducing the energy footprint of the platform.%(\needcheck{EXAMPLES, viele}).
 In the context of artificial intelligence, the gap is even more pronounced. 
 Modern inference workloads are increasingly GPU-bound, but the lack of GPU integration in public serverless platforms is a contributor to preventing FaaS from being used for scalable AI inference. 
-While research in AI sustainability has made progress on model-level and hardware-level optimizations (\needcheck{EXAMPLES}), the platform dimension, i.e., deciding how, when, and which hardware is activated for inference, remains largely unexplored. 
+While research in AI sustainability has made progress on model-level and hardware-level optimizations, the platform dimension, i.e., deciding how, when, and which hardware is activated for inference, remains largely unexplored. 
 As a result, serverless computing today does not yet realize its potential as a key abstraction for sustainable AI.
 
 Against this background, the GEKO project addresses a clear research gap.
