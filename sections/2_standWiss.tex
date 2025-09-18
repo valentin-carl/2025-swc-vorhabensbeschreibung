@@ -70,7 +70,7 @@ Despite these limitations, the research community has begun to address sustainab
 Early work has explored quantifying the energy overheads of function isolation and assigning carbon intensity metrics to individual function invocations~\cite{sharma_accountable_2024}.
 Other studies have examined spatio-temporal scheduling, where functions are steered to data centers with lower grid carbon intensity. %(\needcheck{EXAMPLES, viele}). 
 However, these approaches often conflict with the latency requirements of serverless workloads and cannot fully exploit hardware-level optimizations~\cite{sukprasert_limitations_2024}. 
-The majority of existing work still focuses on performance-oriented goals, such as reducing cold start latencies, rather than systematically reducing the energy footprint of the platform.%(\needcheck{EXAMPLES, viele}).
+The majority of existing work still focuses on performance-oriented goals, such as reducing cold start latencies, rather than systematically reducing the energy footprint of the platform. %(\needcheck{EXAMPLES, viele}).
 In the context of artificial intelligence, the gap is even more pronounced. 
 Modern inference workloads are increasingly GPU-bound, but the lack of GPU integration in public serverless platforms is a contributor to preventing FaaS from being used for scalable AI inference. 
 While research in AI sustainability has made progress on model-level and hardware-level optimizations, the platform dimension, i.e., deciding how, when, and which hardware is activated for inference, remains largely unexplored. 

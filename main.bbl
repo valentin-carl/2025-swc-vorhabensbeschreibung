@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,8 +16,8 @@
   {}
 \endgroup
 
-\datalist[entry]{anyt/global//global/global}
-  \entry{chien_driving_2021}{article}{}
+\datalist[entry]{anyt/global//global/global/global}
+  \entry{chien_driving_2021}{article}{}{}
     \name{author}{1}{}{%
       {{hash=CAA}{%
          family={Chien},
@@ -59,7 +59,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{dwd_2024_klimastatusbericht}{misc}{}
+  \entry{dwd_2024_klimastatusbericht}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=D}{%
          family={{DWD, Geschäftsbereich Klima und Umwelt}},
@@ -87,7 +87,7 @@
     \field{year}{2025}
   \endentry
 
-  \entry{ginzburg_serverless_2020}{inproceedings}{}
+  \entry{ginzburg_serverless_2020}{inproceedings}{}{}
     \name{author}{2}{}{%
       {{hash=GS}{%
          family={Ginzburg},
@@ -144,7 +144,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{gandhi_metrics_2023}{article}{}
+  \entry{gandhi_metrics_2023}{article}{}{}
     \name{author}{10}{}{%
       {{hash=GA}{%
          family={Gandhi},
@@ -243,7 +243,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{jonas_cloud_2019}{misc}{}
+  \entry{jonas_cloud_2019}{misc}{}{}
     \name{author}{14}{}{%
       {{hash=JE}{%
          family={Jonas},
@@ -368,7 +368,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{masanet_recalibrating_2020}{article}{}
+  \entry{masanet_recalibrating_2020}{article}{}{}
     \name{author}{5}{}{%
       {{hash=ME}{%
          family={Masanet},
@@ -438,7 +438,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{patros_2021_towards_sustainable_serverless}{article}{}
+  \entry{patros_2021_towards_sustainable_serverless}{article}{}{}
     \name{author}{6}{}{%
       {{hash=PP}{%
          family={Patros},
@@ -504,7 +504,7 @@
     \field{year}{2021}
   \endentry
 
-  \entry{sharma_accountable_2024}{inproceedings}{}
+  \entry{sharma_accountable_2024}{inproceedings}{}{}
     \name{author}{2}{}{%
       {{hash=SP}{%
          family={Sharma},
@@ -560,7 +560,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{schirmer2023nightshift}{inproceedings}{}
+  \entry{schirmer2023nightshift}{inproceedings}{}{}
     \name{author}{5}{}{%
       {{hash=ST}{%
          family={Schirmer},
@@ -619,7 +619,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{sharma_challenges_2023}{article}{}
+  \entry{sharma_challenges_2023}{article}{}{}
     \name{author}{1}{}{%
       {{hash=SP}{%
          family={Sharma},
@@ -665,7 +665,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{sharma_jevons_2017}{article}{}
+  \entry{sharma_jevons_2017}{article}{}{}
     \name{author}{1}{}{%
       {{hash=SP}{%
          family={Sharma},
@@ -693,7 +693,7 @@
     \field{year}{2024}
   \endentry
 
-  \entry{shehabi_united_2024}{report}{}
+  \entry{shehabi_united_2024}{report}{}{}
     \name{author}{10}{}{%
       {{hash=SA}{%
          family={Shehabi},
@@ -783,7 +783,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{sukprasert_limitations_2024}{inproceedings}{}
+  \entry{sukprasert_limitations_2024}{inproceedings}{}{}
     \name{author}{5}{}{%
       {{hash=ST}{%
          family={Sukprasert},
@@ -854,7 +854,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{young_true_nodate}{inproceedings}{}
+  \entry{young_true_nodate}{inproceedings}{}{}
     \name{author}{5}{}{%
       {{hash=YEG}{%
          family={Young},
