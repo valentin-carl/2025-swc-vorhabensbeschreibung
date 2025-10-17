@@ -4,25 +4,25 @@
 % Formulation of the scientific question: Social relevance, practical relevance, practical application example
 
 Function-as-a-Service (FaaS) is a serverless computing model in which developers write small, stateless functions that are invoked by a cloud platform in response to external requests.
-In this model, the platform manages nearly all aspects of execution, including resource allocation, auto-scaling, and the runtime environment.
+In this model, the cloud platform manages nearly all aspects of execution, including resource allocation, auto-scaling, and the runtime environment.
 Especially in edge environments, where resources are scarce, FaaS has proven to be a suitable paradigm for sharing hardware between applications and allocating resources only when they are actually needed.
 At the same time, the rapid growth of cloud platforms and data centers has made their energy consumption a critical concern.
-Over the past decades, global data center electricity use has steadily increased without signs of slowing down.
+Over the past decades, global data center electricity use has steadily increased without any noticible signs of slowing down.
 In 2023, data centers in the United States alone consumed \SI{176}{TWh}, accounting for \SI{4.4}{\percent} of the country's total electricity use, with projections estimating a rise to \SIrange{6.7}{12}{\percent} by 2028~\cite{shehabi_united_2024}.
 Despite significant improvements in Power Usage Effectiveness (PUE), rising demand consistently outpaces efficiency gains, and data centers already account for roughly \SI{1}{\percent} of global electricity consumption~\cite{masanet_recalibrating_2020,sharma_jevons_2017,gandhi_metrics_2023}.
 This trajectory directly conflicts with the Paris Agreement's target of limiting global warming to well below \SI{2}{\celsius}, which requires rapid and substantial reductions in greenhouse gas emissions.
-These developments create a responsibility for both developers and cloud platforms alike to consciously consider and continuously improve the environmental footprint of their infrastructures~\cite{chien_driving_2021}.
+These developments create a responsibility for both developers and cloud platforms alike to consciously consider and continuously improve the environmental footprint of their operation~\cite{chien_driving_2021}.
 
 The energy demand of artificial intelligence workloads is a particularly pressing issue.
 Modern inference tasks are heavily GPU-bound, and while GPUs provide the necessary computational performance, they are also associated with high energy costs.
 This creates a fundamental tension between society's growing reliance on AI-powered services and the urgent need to reduce the carbon footprint of digital infrastructures.
 To address this challenge, we focus on FaaS as the underlying paradigm.
-The serverless model provides fine-grained elasticity, centralized infrastructure management, resource sharing across applications, and a large degress of control to the cloud platform, which are particularly valuable both in large-scale cloud data centers and in resource-constrained edge environments.
-These properties make FaaS a natural foundation for implementing energy-aware orchestration strategies that can adaptively control GPU usage.
-At the same time, a lot of work remains to be done in order to improve the currently poor energy efficiency of contemporary FaaS platforms~\cite{sharma_challenges_2023}.
+The serverless model provides fine-grained elasticity, centralized infrastructure management, resource sharing across applications, and a large degree of control to the cloud platform, which is particularly valuable both in large-scale cloud data centers and in resource-constrained edge environments.
+These properties make FaaS a natural foundation for implementing energy-aware orchestration strategies that can adaptively control resource usage.
+At the same time, a lot of open challenges need to be addressed in order to improve the currently poor energy efficiency of contemporary FaaS platforms~\cite{sharma_challenges_2023}.
 The scientific question that motivates this project is therefore: How can GPU resources for serverless inference be orchestrated in an adaptive and energy-efficient manner, without compromising performance?
 
-The social relevance of this question lies in the sustainability of digital infrastructures.
+The relevance of this question lies in the sustainability of digital infrastructures.
 As AI models become important components of everyday applications, from medical diagnostics to large language models, operators must reconcile latency and throughput demands with climate responsibility.
 Practically, today's serverless platforms provide limited support for GPU execution, in general, and fine-grained GPU management, in particular: In most deployments and when available, GPUs remain powered even during idle times, wasting significant amounts of energy.
 Addressing this inefficiency not only has the potential to greatly affect environmental impact of serverless infrastructure but also lowers operational costs in cloud-scale environments.
@@ -32,8 +32,8 @@ Practical application examples can be found in inference-as-a-service offerings.
 Applications such as real-time medical image analysis or conversational AI systems must respond elastically to fluctuating demand.
 A dynamic orchestration approach will ensure that GPUs are powered on only when required, while predictive scheduling mechanisms mitigate cold-start overheads.
 This will enable cloud providers and companies using private clouds to deliver sustainable, latency-sensitive services at scale without sacrificing user experience.
-The goal of the \textbf{GEKO} (\enquote{\textbf{G}PUs \textbf{e}nergieeffizient für \textbf{K}I-Inferenz \textbf{o}rchestrieren}) project is therefore to develop serverless platform architectures and programming abstractions that will enable deploying, managing, and using serverless functions with GPU support for AI applications in an energy-efficient manner.
-\needcheck{The platform and abstractions will be published as Open-Source, so that other researchers and industry can directly benefit from the results of the project.}
+The goal of the \textbf{GEKO} (\enquote{\textbf{G}PUs \textbf{e}nergieeffizient für \textbf{K}I-Inferenz \textbf{o}rchestrieren}) project is therefore to develop a serverless platform architecture and programming abstractions that will enable deploying, managing, and using serverless functions with GPU support for AI applications in an energy-efficient manner.
+The platform and abstractions will be made open source, to facilitate scientific and industrial R\&D efforts.
 
 \subsection{Focus and objectives}
 % Grobe Ziele, Menthodenschwerpunkte, Neuheutsgrad des Ansatzes
@@ -49,7 +49,7 @@ Yet, realizing this potential requires foundational research, since existing pla
 Notably, most public FaaS services do not provide GPU support at all, leaving no basis for exploring efficient orchestration of inference workloads.
 
 A key reason why FaaS is particularly well suited for sustainable computing lies in its platform-centric model.
-Instead of requiring every developer to solve sustainability challenges individually, the serverless abstraction concentrates responsibility for efficiency at the platform level.
+Instead of requiring every developer to solve sustainability challenges individually, the serverless abstraction concentrates responsibility for energy-efficiency at the platform level.
 This enables resource sharing, workload consolidation, and energy-aware scheduling to be implemented once and leveraged by all applications running on the platform.
 In principle, this makes FaaS one of the strongest candidates for aligning large-scale digital infrastructures with sustainability goals, provided that the necessary system mechanisms exist.
 
@@ -61,13 +61,18 @@ In doing so, the GEKO project seeks to bridge the gap between today's energy-ine
 \subsection{Scientific and/or technical objectives of the project}
 % Ausdifferenzierung, technische Konkretisierung. Typisches Ziel: Prototyp, Demonstrator - keine Produktentwicklung, kein fertiges Produkt
 
-Building on the motivation outlined above, this project aims to develop the foundations for sustainable and scalable GPU-based inference in serverless platforms. The overarching goal is to transform Function-as-a-Service from an energy-inefficient abstraction into a viable basis for sustainable AI infrastructure. To achieve this, we focus on system-level mechanisms that enable adaptive GPU orchestration, efficient resource sharing, and transparent integration of energy-aware scheduling policies into the serverless execution model.
+Building on the motivation outlined above, this project aims to develop the foundations for sustainable and scalable GPU-based inference in serverless platforms.
+The overarching goal is to transform Function-as-a-Service from an energy-inefficient abstraction into a viable basis for sustainable AI inference infrastructure.
+To achieve this, we focus on system-level mechanisms that enable adaptive GPU orchestration, efficient resource sharing, and transparent integration of energy-aware scheduling policies into the serverless execution model.
 
-The concrete objectives of this project are threefold. First, we seek to design and implement the missing platform mechanisms that allow GPUs to be exposed as first-class resources in FaaS environments. Second, we aim to develop orchestration strategies that adapt GPU allocation dynamically to workload fluctuations, minimizing idle energy costs while preserving performance. Third, we plan to evaluate the effectiveness of these strategies across a diverse set of inference workloads and deployment settings, thereby quantifying their impact on both energy efficiency and quality of service.
+The concrete objectives of this project are threefold.
+First, we seek to design and implement the missing platform mechanisms that allow GPUs to be exposed as first-class resources in FaaS environments for AI workloads.
+Second, we aim to develop orchestration strategies that adapt GPU allocation dynamically to workload fluctuations, minimizing idle energy costs while preserving performance.
+Third, we plan to evaluate the effectiveness of these strategies across a diverse set of inference workloads and deployment settings, thereby quantifying their impact on both energy efficiency and quality of service.
 
 From these objectives, the following technical and research questions emerge:
 \begin{enumerate}
-    \item How can GPUs be exposed and managed as first-class resources in FaaS environments, given the short-lived and highly dynamic nature of serverless functions? % GPU Integration
+    \item How can GPUs be exposed and managed as first-class resources in FaaS environments for AI workloads, given the short-lived and highly dynamic nature of serverless functions? % GPU Integration
     \item What orchestration strategies can dynamically adapt GPU allocation to workload fluctuations, ensuring high utilization while minimizing idle energy costs? % Adaptive Scheduling
     \item How do the proposed mechanisms perform across diverse AI inference workloads, and what trade-offs emerge between energy efficiency, performance, and scalability? % Evaluation and trade-offs
 \end{enumerate}
